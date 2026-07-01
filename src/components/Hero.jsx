@@ -1,0 +1,70 @@
+// const Hero = () => {
+//   return (
+//     <section
+//       id="hero"
+//       className="d-flex align-items-center"
+//       style={{
+//         backgroundImage: `url(/images/hero-bg.jpg)`
+//       }}
+//     >
+//       <div className="container text-center">
+//         <h1>Better digital experience with Dewi</h1>
+//         <h2>We are team of talented designers</h2>
+//         <a href="#about" className="btn-get-started">
+//           Get Started
+//         </a>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Hero;
+const Hero = () => {
+  return (
+    <section
+      id="hero"
+      className="hero section dark-background"
+      style={{
+        backgroundImage: "url(/images/hero-bg.jpg)",
+        backgroundSize: "cover"
+      }}
+    >
+      <div className="hero-depth-scene" aria-hidden="true">
+        <span className="hero-depth-orbit orbit-one" />
+        <span className="hero-depth-orbit orbit-two" />
+        <span className="hero-depth-panel panel-one">
+          <span className="depth-signal"><b /><b /><b /></span>
+        </span>
+        <span className="hero-depth-panel panel-two">
+          <span className="depth-flow"><b /><b /><b /></span>
+        </span>
+        <span className="hero-depth-panel panel-three">
+          <span className="depth-chart"><b /><b /><b /><b /></span>
+        </span>
+      </div>
+      <div className="container text-center">
+        <h2>Technology that moves<br />business forward.</h2>
+        <p>
+          FlowupS Technologies Pvt. Ltd. builds practical software products and digital solutions for modern businesses.
+        </p>
+        {/* <p>
+          <small>
+            Authorized Tally Partners providing seamless integration, customization, and 24/7 technical support.
+          </small>
+        </p> */}
+
+        <div className="mt-4">
+          <a href="/contact-us" className="btn-get-started me-3">
+            Talk to Our Team
+          </a>
+
+          <a href="#features" className="btn-watch-video">
+            Explore Solutions
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
