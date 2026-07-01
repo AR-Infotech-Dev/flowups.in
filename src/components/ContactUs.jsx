@@ -1,12 +1,35 @@
 import React from 'react'
 
+import { Link } from "react-router-dom";
 
 function ContactUs() {
     return (
-        <section id="contact" className="contact section">
+        <>
+            <main className="about">
+                {/* 🔥 Page Title */}
+                <div
+                    className="page-title dark-background"
+                    data-aos="fade"
+                    style={{
+                        backgroundImage: "url(/images/page-title-bg.webp)",
+                    }}
+                >
+                    <div className="container position-relative">
+                        <h1>Contact Us</h1>
+                        <p></p>
+                        <nav className="breadcrumbs">
+                            <ol>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/contact-us">Contact Us</Link></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </main>
+                    <section id="contact" className="contact section">
 
             <div className="container section-title pb-4" data-aos="fade-up">
-                {/* <h2>Contact</h2> */}
+                <h2>Contact</h2>
                 <p>We fulfill your requirements</p>
             </div>
 
@@ -81,6 +104,7 @@ function ContactUs() {
             </div>
 
         </section>
+        </>
     )
 }
 

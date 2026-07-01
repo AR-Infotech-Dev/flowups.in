@@ -3,9 +3,7 @@ import Contact from '../components/ContactUs'
 
 function ContactUs() {
   return (
-    <div className='py-5'>
-      <Contact />
-    </div>
+    <Contact />
   )
 }
 

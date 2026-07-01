@@ -43,9 +43,9 @@ function Footer() {
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              {servicesData.map((service, index)=>{                
-                return(
-                  <li key={index }><i className="bi bi-chevron-right"></i> <a href={`/services/${service.id}`}>{service.title}</a></li>
+              {servicesData.map((service, index) => {
+                return (
+                  <li key={index}><i className="bi bi-chevron-right"></i> <a href={`/services/${service.id}`}>{service.title}</a></li>
                 )
               })}
               {/* <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -65,16 +65,16 @@ function Footer() {
                 <div className="error-message"></div>
                 <div className="sent-message">Your subscription request has been sent. Thank you!</div>
               </form> */}
-              </div>
-
           </div>
-        </div>
 
-        <div className="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong className="px-1 sitename">FlowupS Technologies Pvt. Ltd.</strong> <span>All Rights Reserved</span></p>
-          <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by</div>
         </div>
+      </div>
+
+      <div className="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong className="px-1 sitename">FlowupS Technologies Pvt. Ltd.</strong> <span>All Rights Reserved</span></p>
+        <div className="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by</div>
+      </div>
 
     </footer>
   )
