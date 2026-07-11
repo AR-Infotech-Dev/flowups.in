@@ -36,10 +36,13 @@ const features = [
 ];
 
 const workflow = [
-  ["01", "Discover", "Understand the business, users, constraints, and the outcome that matters."],
-  ["02", "Design", "Shape a focused solution, experience, and implementation roadmap."],
-  ["03", "Build", "Develop, integrate, test, and refine with practical milestones."],
-  ["04", "Support", "Launch confidently and keep improving as the business evolves."],
+  ["01", "Requirement Study", "We understand your business process, current software usage, pain points, reporting needs, users, controls, and expected output."],
+  ["02", "Logic & Schema Planning", "We prepare the business logic, data structure, module flow, user roles, reports, and integration requirements before development starts."],
+  ["03", "Solution Design", "We finalize the screens, fields, approval flow, entry process, reports, print formats, and automation rules."],
+  ["04", "Development", "Our development team builds the TDL module, Tally customization, web application, mobile app, API, or integration as per the approved scope."],
+  ["05", "Testing & Refinement", "We test the solution with practical business scenarios, sample data, edge cases, user roles, and report outputs."],
+  ["06", "Implementation & Training", "We deploy the solution, configure it for your workflow, and train your team so they can use it confidently."],
+  ["07", "Support & Improvement", "After implementation, we continue to support fixes, improvements, enhancements, and future changes as your business grows."],
 ];
 
 const useCases = [
@@ -60,24 +63,36 @@ const integrations = [
 
 const faqs = [
   [
-    "What does FlowupS Technologies build?",
-    "We build software products, business systems, websites, integrations, and customized digital solutions.",
+    "Can FlowupS customize Tally Prime as per our business process?",
+    "Yes. FlowupS Technologies develops custom TDL modules and Tally Prime customizations for billing, inventory, reports, security, approvals, industry workflows, and integrations.",
   ],
   [
-    "What products do you offer?",
-    "Our current product portfolio includes CallDesk and Sathi Connect, supported by implementation and customization services.",
+    "Can you integrate Tally with our existing software?",
+    "Yes. We can integrate Tally with CRM, ERP, mobile apps, web portals, e-commerce platforms, POS systems, payroll software, inventory tools, and custom applications using suitable integration methods.",
   ],
   [
-    "Can your solutions connect with our current software?",
-    "Integration depends on the tools and APIs available. We review your current setup and recommend the most practical approach.",
+    "Do you build custom software from scratch?",
+    "Yes. We develop custom web applications, mobile applications, dashboards, CRM systems, ERP modules, support systems, and workflow-based business software.",
   ],
   [
-    "Do you provide onboarding and training?",
-    "Yes. We support discovery, setup, process mapping, user onboarding, and training so your team can adopt the solution confidently.",
+    "Can you prepare the complete software logic and schema?",
+    "Yes. We can study your business requirement and prepare the complete logic, module structure, data flow, user roles, reports, and development roadmap.",
   ],
   [
-    "How do we get started?",
-    "Book a discovery call. We will understand your workflow, identify priorities, and outline the right next steps.",
+    "Do you provide support after implementation?",
+    "Yes. We provide support for training, bug fixing, enhancements, report changes, Tally customization changes, integration monitoring, and future improvements.",
+  ],
+  [
+    "Can you build industry-specific Tally modules?",
+    "Yes. We can build Tally modules for education, hospital, garment, petrol pump, APMC/ADAT, jewellery, dairy, retail, distribution, manufacturing, and other industries.",
+  ],
+  [
+    "Is CallDesk suitable for customer support teams?",
+    "Yes. CallDesk is useful for businesses that need to manage support tickets, customer complaints, service requests, assignments, follow-ups, and support team performance.",
+  ],
+  [
+    "What is Sathi Connect?",
+    "Sathi Connect is a connectivity bridge between the Seeds Portal and Tally Prime. It helps reduce manual entry and improves data movement between portal workflows and Tally.",
   ],
 ];
 
@@ -269,12 +284,11 @@ function LandingSections() {
         <div className="container">
           <div className="row align-items-center gy-5">
             <div className="col-lg-5" data-aos="fade-right">
-              <span className="home-eyebrow">FlowupS Technologies Pvt. Ltd.</span>
-              <h2>We turn business challenges into focused technology.</h2>
+              <span className="home-eyebrow">Tally, Integration & Software Solutions</span>
+              <h2>FlowupS Technologies delivers Tally expertise, custom software, and seamless integration solutions with end-to-end project support.</h2>
               <p className="product-about-lead">
-                We build useful software products and tailored digital solutions,
-                combining product thinking, engineering, integration, and
-                dependable implementation support.
+                FlowupS Technologies combines Tally expertise with custom software development to create practical business solutions, 
+                seamless integrations, & automation systems backed by end-to-end project support.
               </p>
               <div className="product-checks">
                 <span><i className="bi bi-check2-circle" />Business-first product thinking</span>
@@ -356,10 +370,36 @@ function LandingSections() {
 
       <FeaturedServices />
 
+{/* ******************************************************************************************************************/}
+
       <section className="home-workflow section dark-background">
         <div className="container section-title" data-aos="fade-up">
-          <h2>How It Works</h2>
-          <p>A clear path from business need to working solution</p>
+          <h2>How We Work</h2>
+          <p>Our process is designed to deliver practical solutions aligned with your business workflow, 
+            from understanding requirements to development.</p>
+        </div>
+        <div className="container">
+          <div className="row gy-4">
+            {workflow.map(([number, title, text], index) => (
+              <div className="col-lg-3 col-md-6" key={number} data-aos="fade-up" data-aos-delay={index * 80}>
+                <div className="home-workflow-step h-100">
+                  <span>{number}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+{/* ********************************************************************************************************** */}
+
+      <section className="home-workflow section dark-background">
+        <div className="container section-title" data-aos="fade-up">
+          <h2>How We Work</h2>
+          <p>Our process is designed to deliver practical solutions aligned with your business workflow, 
+            from understanding requirements to development.</p>
         </div>
         <div className="container">
           <div className="row gy-4">

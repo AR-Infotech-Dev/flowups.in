@@ -3256,9 +3256,9 @@ h6 {
 
 .section-title p {
   margin-top: 12px;
-  font-size: clamp(32px, 4vw, 46px);
-  font-weight: 700;
-  line-height: 1.14;
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 100;
+  line-height: 1.1;
   letter-spacing: -0.04em;
   text-transform: none;
 }
@@ -3293,18 +3293,19 @@ h6 {
 }
 
 .hero h2 {
-  font-size: clamp(48px, 6.4vw, 78px);
-  font-weight: 700;
+  font-size: clamp(40px, 6.4vw, 70px);
+  font-weight: 200;
   line-height: 1.02;
   letter-spacing: -0.055em;
   text-transform: none;
+  margin-top: -40px;
 }
 
 .hero p {
   max-width: 710px;
   margin: 24px auto 0;
-  font-size: clamp(18px, 2vw, 22px);
-  font-weight: 400;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 200;
   line-height: 1.6;
 }
 
@@ -5083,8 +5084,8 @@ h6 {
 .product-about h2 {
   max-width: 580px;
   margin-bottom: 22px;
-  font-size: clamp(36px, 3.7vw, 50px);
-  line-height: 1.06;
+  font-size: clamp(30px, 3.7vw, 10px);
+  line-height: 1.09;
 }
 
 .product-about-lead {
