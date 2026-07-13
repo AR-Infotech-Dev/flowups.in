@@ -413,10 +413,9 @@ export const customization_data = [
     title: "School/ College",
     banner: "/images/school.png",
     subtitle:
-      "Complete ERP & CRM solution for educational institutions.",
+      "For schools and colleges, FlowupS can build Tally-based or custom software workflows for admissions, student records, fees, documents, certificates, transport, staff payroll, and reporting.",
 
-    description:
-      "Manage admissions, fees, attendance, transport, payroll and academics easily.",
+   
 
     features: [
       {
@@ -547,6 +546,7 @@ export const customization_data = [
     id: 'mobile_shoppe_home_application',
     title: "Mobile Shoppe/Home Application",
     banner: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg",
+    subtitle:"",
     features: [
       {
         title: "IMEI and Serial Number Tracking",
@@ -700,6 +700,7 @@ export const customization_data = [
     id: 'purchase_note',
     title: "Purchase Requisition Note(PRN)",
     banner: "/images/services-2.jpg",
+    subtitle:"",
     features: [
       {
         title: " Create Requisition Notes",
@@ -941,9 +942,12 @@ export const customization_data = [
   },
   {
     id: "hospital_management",
-    title: " Hosptal Management ",
+    title: " Hospital Management ",
     banner: "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg",
-    features: [
+   
+   subtitle:"For hospitals and clinics, we can support OPD/IPD billing, patient records, bed management, doctor management, receipts, discharge summaries, and hospital financial reporting.",
+   subtitle:"",
+   features: [
       {
         title: "Ward and Bed Management",
         image: "https://images.unsplash.com/photo-1628373961147-87e7f514a35f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGhvc3BpdGFsfGVufDB8fDB8fHww",
@@ -1053,6 +1057,7 @@ export const customization_data = [
     id: "auto_email",
     title: "Auto Email",
     banner: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+    subtitle: "Automate your email communications with Tally.",
     features: [
 
       {
@@ -1171,6 +1176,7 @@ export const customization_data = [
     id: "petrol_pump",
     title: "Petrol Pump",
     banner: "",
+    subtitle:"",
     features: [
 
       {
@@ -1786,6 +1792,7 @@ export const customization_data = [
     id: "warranty_amc",
     title: "Warranty & AMC",
     banner: "https://media.istockphoto.com/id/2202847872/photo/in-this-business-management-concept-a-businessman-erases-a-white-arrow-and-draws-a-yellow.jpg?s=612x612&w=0&k=20&c=VsrUk7MqH5mSwfhhYibYP7Cpjq7P_VAs3u3zMPXejsA=",
+   subtitle:"",
     features: [
       {
         title: "Warranty Tracking",
@@ -1842,6 +1849,7 @@ export const customization_data = [
     id: "api_integration",
     title: "Other Software integration With Tally Via API",
     banner: "https://media.istockphoto.com/id/2168215145/photo/businessman-using-kpi-dashboard-management-data-system-kpi-connected-in-database-for-follow.jpg?s=612x612&w=0&k=20&c=kUNncAVVzQEGnoEkAk0RZpfawjgH1tDx6gbIJ7St-cs=",
+    subtitle:"",
     features: [
       {
         title: "CRM Integration",
@@ -1898,6 +1906,7 @@ export const customization_data = [
     id: "multi_settlement",
     title: "Multi-Settlement With Auto Receipt",
     banner: "https://media.istockphoto.com/id/2263538191/photo/close-up-of-receipt-printing-from-payment-terminal.jpg?s=612x612&w=0&k=20&c=8NB5q8bKoqkBMdPACp2qYsgOcNNdPwPcDCZP7h5JFE8=",
+    subtitle: "",
     features: [
       {
         title: "Sales + Auto Receipt = One Step",
@@ -1953,6 +1962,7 @@ export const customization_data = [
     id: "jewellary_module",
     title: " Jewellery",
     banner: "https://images.unsplash.com/photo-1647312281540-47455957ee2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGpld2VsbGFyeV9tb2R1bGV8ZW58MHx8MHx8fDA%3D",
+  subtitle:"",
     features: [
       {
         title: "Gold/Silver Sales & Purchase",
@@ -2010,6 +2020,7 @@ export const customization_data = [
     id: "share_market",
     title: " Share Market ",
     banner: "https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U0hBUkUlMjBNQVJLRVQlMjBNT0RVTEV8ZW58MHx8MHx8fDA%3D",
+   subtitle:"",
     features: [
       {
         title: "Share Accounting Management",
@@ -2091,6 +2102,7 @@ export const customization_data = [
     id: "doc_link",
     title: "Document Linking System in tally Prime Using DLL",
     banner: "https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fERvY3VtZW50JTIwTGlua2luZyUyMFN5c3RlbSUyMGluJTIwdGFsbHklMjBQcmltZSUyMFVzaW5nJTIwRExMfGVufDB8fDB8fHww",
+    subtitle:"",
     features: [
       {
         title: "Share Accounting Management",
