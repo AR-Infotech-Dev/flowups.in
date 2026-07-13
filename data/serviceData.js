@@ -46,58 +46,59 @@
 //         ],
 //     },
 
-import { Feather } from "lucide-react";
+import { Feather, Group } from "lucide-react";
 
 export const servicesData = [
-  {
-    id: "web_development",
-    title: "Web Development",
-    img: "services-1.jpg",
-    icon: "bi-code-slash",
-    subtitle: "Tailoring Tally to specific business needs.",
-    description: "We create modern and responsive website designs tailored to your business.",
-    image: "/images/services.jpg",
-    points: [
-      "Responsive design",
-      "Modern UI/UX",
-      "SEO friendly",
-    ],
-    categories: [
-      {
-        id: "frontend",
-        title: "Frontend Development",
-        items: [
-          { name: "React Development", slug: "react" },
-          { name: "HTML/CSS Websites", slug: "html-css" },
-          { name: "Landing Pages", slug: "landing-pages" },
-          { name: "Responsive Design", slug: "responsive" },
-        ],
-      },
-      {
-        id: "backend",
-        title: "Backend Development",
-        items: [
-          { name: "Node.js Development", slug: "nodejs" },
-          { name: "PHP Development", slug: "php" },
-          { name: "Laravel Development", slug: "laravel" },
-          { name: "API Development", slug: "api" },
-        ],
-      },
-      {
-        id: "fullstack",
-        title: "Full Stack Solutions",
-        items: [
-          { name: "MERN Stack", slug: "mern" },
-          { name: "Custom Web Apps", slug: "custom-web-apps" },
-          { name: "E-commerce Development", slug: "ecommerce" },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "web_development",
+  //   title: "Web Development",
+  //   img: "services-1.jpg",
+  //   icon: "bi-code-slash",
+  //   subtitle: "Tailoring Tally to specific business needs.",
+  //   description:
+  //     "We create modern and responsive website designs tailored to your business.",
+  //   image: "/images/services.jpg",
+  //   points: [
+  //     "Responsive design",
+  //     "Modern UI/UX",
+  //     "SEO friendly",
+  //   ],
+  //   categories: [
+  //     {
+  //       id: "frontend",
+  //       title: "Frontend Development",
+  //       items: [
+  //         { name: "React Development", slug: "react" },
+  //         { name: "HTML/CSS Websites", slug: "html-css" },
+  //         { name: "Landing Pages", slug: "landing-pages" },
+  //         { name: "Responsive Design", slug: "responsive" },
+  //       ],
+  //     },
+  //     {
+  //       id: "backend",
+  //       title: "Backend Development",
+  //       items: [
+  //         { name: "Node.js Development", slug: "nodejs" },
+  //         { name: "PHP Development", slug: "php" },
+  //         { name: "Laravel Development", slug: "laravel" },
+  //         { name: "API Development", slug: "api" },
+  //       ],
+  //     },
+  //     {
+  //       id: "fullstack",
+  //       title: "Full Stack Solutions",
+  //       items: [
+  //         { name: "MERN Stack", slug: "mern" },
+  //         { name: "Custom Web Apps", slug: "custom-web-apps" },
+  //         { name: "E-commerce Development", slug: "ecommerce" },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   {
     id: "crm",
-    title: "Software Development",
+    title: "Custom Software Development Services",
     subtitle: "We design and develop responsive, high-performance websites and web applications tailored to your business needs.",
     description:
       "Custom software solutions to automate and scale your business operations.",
@@ -142,10 +143,10 @@ export const servicesData = [
 
   {
     id: "tally",
-    title: "Tally",
+    title: "Tally Customization & Integration Solutions",
     subtitle: "We provide custom software solutions for businesses including CRM, ERP, and automation systems.",
     description:
-      "Manage your products effectively with structured workflows.",
+      "Custom TDL modules, Tally Prime enhancements, reports, controls, and integrations built around your business process..",
     image: "/images/services.jpg",
     points: [
       "Inventory tracking",
@@ -200,163 +201,207 @@ export const servicesData = [
         slug: "customization",
         title: "Tally Customise",
         items: [
-         
-           {
-            name: "School / College ERP",
-            slug: "school_college",
-            icon: "bi-mortarboard"
+          {
+            category: "Industry-Specific Business Modules",
+            title: "Education",
+            services: [
+              {
+                name: "School / College ERP",
+                slug: "school_college",
+                icon: "bi-mortarboard"
+              },
+              {
+                name: "Wholesale Garment",
+                slug: "wholesale-garment",
+                icon: "bi-bag"
+              },
+              {
+                name: "Mobile Shoppe/ Home Application",
+                slug: "mobile_shoppe_home_application",
+                icon: "bi-phone"
+              },
+              {
+                name: "Hospital Management",
+                slug: "hospital_management",
+                icon: "bi-heart-pulse"
+              },
+              {
+                name: "APMC / ADA",
+                slug: "apmc_ada",
+                icon: "bi-shop"
+              },
+              {
+                name: "Petrol Pump",
+                slug: "petrol_pump",
+                icon: "bi-fuel-pump"
+              },
+              {
+                name: "Jewellary Module",
+                slug: "jewellary_module",
+                icon: "bi-gem"
+              },
+              {
+                name: "Dairy Integration with Dairy Software Via API",
+                slug: "dairy_integration",
+                icon: "bi-cup-hot"
+              },
+              {
+                name: "Share Market",
+                slug: "share_market",
+                icon: "bi-graph-up"
+              },
+              {
+                name: "Fruit Adat",
+                slug: "fruit_adat",
+                icon: "bi-basket"
+              },
+              {
+                name: "Material Requisition",
+                slug: "material_requisition",
+                icon: "bi-box-seam"
+              }
+
+
+            ]
           },
 
           {
-            name: "Wholesale Garment",
-            slug: "wholesale_garment",
-             icon: "bi-bag "
+            category: "Billing, Invoice & POS Customization",
+
+            services: [
+              {
+                name: "Normal Bill Printing to POS Bill Printing",
+                slug: "normal_pos",
+                icon: "bi-printer"
+              },
+              {
+                name: "Discount Schema(Payment-Based)",
+                slug: "discount_schema",
+                icon: "bi-percent"
+              },
+
+            ]
           },
 
           {
-            name: "Mobile Shoppe/ Home Application",
-            slug: "mobile_shoppe_home_application",
-            icon: "bi-phone"
+            category: "Inventory, Stock & Manufacturing",
+            services: [
+              {
+                name: "Bank Statement",
+                slug: "bank_statement",
+                icon: "bi-bank"
+              },
+              {
+                name: "Purchase Requisition Note",
+                slug: "purchase_note",
+                icon: "bi-cart-check"
+              },
+            ]
           },
- 
-         {
-            name: "Audit Trail",
-            slug: "audit_trail",
-            icon: "bi-clock-history"
+          {
+            category: "Reports, MIS & Business Analysis",
+            services: [
+              {
+                name: "Multi-Settelment With Auto Receipt",
+                slug: "multi_settlement",
+                icon: "bi-receipt"
+              },
+              {
+                name: "MIS Dashboards",
+                slug: "mis_dashboards",
+                icon: "bi-graph-up"
+              },
+              {
+                name: "Multi-Settelment With Auto Receipt",
+                slug: "multi_settlement",
+                icon: "bi-receipt"
+              }
+            ]
           },
+          {
+            category: "Security, Controls & Approval Workflow",
+            services: [
+              {
+                name: "Advanced Security",
+                slug: "advanced_security",
+                icon: "bi-shield-lock"
+              },
+              {
+                name: "Email OTP Login for Admin",
+                slug: "email_otp",
+                icon: "bi-shield-check"
+              },
+              {
+                name: "Recycle Bin Voucher Delete by Password",
+                slug: "recycle_bin",
+                icon: "bi-trash"
+              }
+            ]
+          },
+          {
+            category: "GST, Tax & Compliance",
+            services: [
+              {
+                name: "Discount Schema(Payment-Based)",
+                slug: "discount_schema",
+                icon: "bi-percent"
+              },
+              {
+                name: "Tax Compliance",
+                slug: "tax_compliance",
+                icon: "bi-gear"
+              }
+            ]
+          },
+          {
+            category: "Import, Export, Email & Document Automation",
+            services: [
+              {
+                name: "Document Linking System in Tally Prime Using DLL",
+                slug: "doc_link",
+                icon: "bi-link-45deg"
 
-          {
-            name: "Purchase Requisition Note",
-            slug: "purchase_note",
-            icon: "bi-cart-check"
-          },
 
-          {
-            name: "Discount Schema(Payment-Based)",
-            slug: "discount_schema",
-            icon: "bi-percent"
-          },
-
-          {
-            name: "Bank Statement",
-            slug: "bank_statement",
-            icon: "bi-bank"
-          },
-
-          
-          {
-            name: "Hospital Management",
-            slug: "hospital_management",
-              icon: "bi-heart-pulse"
-          },
-
-          {
-            name: "Auto Email",
-            slug: "auto_email",
-            icon: "bi-envelope"
-          },
-
-          {
-            name: "Petrol Pump",
-            slug: "petrol_pump",
-            icon: "bi-fuel-pump"
-          },
-
-          {
-            name: "Broker/ Salesman",
-            slug: "broker_salesman",
-            icon: "bi-people"
-          },
-  
-
-          {
-            name: "APMC / ADA",
-            slug: "apmc_ada",
-            icon: "bi-shop"
+              }
+            ]
           },
           {
-            name: "Fruit Adat",
-            slug: "fruit_adat",
-            icon: "bi-basket"
-          },
-       {
-            name: "Advanced Security",
-            slug: "advanced_security",
-            icon: "bi-shield-lock"
-          },
-
-        
-          {
-            name: "Email OTP Login for Admin",
-            slug: "email_otp",
-            icon: "bi-shield-check"
-          },
-          
-          {
-            name: "Warranty & AMC",
-            slug: "warranty_amc",
-            icon: "bi-patch-check"
-          },
-
-          {
-            name: "Other Software Integration With Tally Via API",
-            slug: "api_integration",
-            icon: "bi-diagram-3"
-          },
-
-          {
-            name: "Multi-Settelment With Auto Receipt",
-            slug: "multi_settlement",
-            icon: "bi-receipt"
-          },
-
-          {
-            name: "Jewellary Module",
-            slug: "jewellary_module",
-            icon: "bi-gem"
-          },
-
-          {
-            name: "Share Market",
-            slug: "share_market",
-            icon: "bi-graph-up"
+            category: "Payment, Receipt & Outstanding Management",
+            services: [
+              {
+                name: "Normal Bill Printing to POS Bill Printing",
+                slug: "normal_pos",
+                icon: "bi-printer"
+              }
+            ]
           },
           {
-            name: "Document Linking System in Tally Prime Using DLL",
-            slug: "doc_link",
-            icon: "bi-link-45deg"
-          },
-
-          {
-            name: "Normal Bill Printing to POS Bill Printing",
-            slug: "normal_pos",
-            icon: "bi-printer"
-          },
-
-          {
-            name: "Dairy Integration with Dairy Software Via API",
-            slug: "dairy_integration",
-            icon: "bi-cup-hot"
-          },
-
-          {
-            name: "Recycle Bin Voucher Delete by Password",
-            slug: "recycle_bin",
-            icon: "bi-trash"
-          },
-
-          {
-            name: "Material Requisition",
-            slug: "material_requisition",
-            icon: "bi-box-seam"
-          },
-
-          {
-            name: "Random Bulk Cost Adjustment Entries",
-            slug: "bulk_cost_adjustment",
-            icon: "bi-calculator"
+            category: "Workflow, Task & Utility Modules",
+            services: [
+              {
+                name: "Normal Bill Printing to POS Bill Printing",
+                slug: "normal_pos",
+                icon: "bi-printer"
+              },
+              {
+                name: "Warranty & AMC",
+                slug: "warranty_amc",
+                icon: "bi-patch-check"
+              },
+              {
+                name: "Other Software Integration With Tally Via API",
+                slug: "api_integration",
+                icon: "bi-diagram-3"
+              },
+              {
+                name: "Random Bulk Cost Adjustment Entries",
+                slug: "bulk_cost_adjustment",
+                icon: "bi-calculator"
+              }
+            ]
           }
-        ],
+
+        ]
       },
     ],
   },
@@ -447,8 +492,7 @@ export const customization_data = [
   {
     id: 'wholesale_garment',
     title: "Wholesale Garment",
-   banner: "/images/services-2.jpg",
-    subtitle:"",
+    banner: "/images/services-2.jpg",
     features: [
       {
         title: "Multiple Types of Stock Items",
@@ -556,8 +600,8 @@ export const customization_data = [
     id: "audit_trail",
     title: "Audit Trail",
     banner:
-    "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
-     subtitle:"",
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+
     features: [
 
       {
@@ -736,8 +780,7 @@ export const customization_data = [
   {
     id: 'discount_schema',
     title: "Discount Schema(Payment-Based)",
-   banner: "/images/services-2.jpg",
-   subtitle:"",
+    banner: "/images/services-2.jpg",
     features: [
 
       {
@@ -835,9 +878,8 @@ export const customization_data = [
   {
     id: "bank_statement",
     title: "Bank Statement Import ",
-  banner: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmt8ZW58MHx8MHx8fDA%3D",
-  subtitle:"",  
-  features: [
+    banner: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmt8ZW58MHx8MHx8fDA%3D",
+    features: [
       {
         title: "Import Excel Bank Statements into Tally",
         image: "https://images.unsplash.com/photo-1763872849312-67984fbf5f68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEJBTkslMjBTVEFURU1FTlQlMjBJTVBPUlQlMjBNT0RVTEV8ZW58MHx8MHx8fDA%3D",
@@ -1274,8 +1316,7 @@ export const customization_data = [
   {
     id: "broker_salesman",
     title: "Broker Salesman",
-   banner: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
-   subtitle:"",
+    banner: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
     features: [
 
       {
@@ -1354,8 +1395,7 @@ export const customization_data = [
   {
     id: "apmc_ada",
     title: "APMC ADA",
-   banner: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
-   subtitle:"",
+    banner: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
     features: [
 
       {
@@ -1484,8 +1524,7 @@ export const customization_data = [
   {
     id: "fruit_adat",
     title: "Fruit ADAT",
-   banner: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
-   subtitle:"",
+    banner: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
     features: [
 
       {
@@ -1613,9 +1652,8 @@ export const customization_data = [
   }, {
     id: "advanced_security",
     title: "Advanced Security",
-   banner:
-    "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg",
-    subtitle:"",
+    banner:
+      "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg",
 
     features: [
 
@@ -1707,7 +1745,7 @@ export const customization_data = [
     id: "email_otp",
     title: "Email-Based OTP Login",
     banner: "https://media.istockphoto.com/id/1830134328/photo/businesswoman-login-to-the-network-by-username-and-password-on-the-virtual-screen-while.jpg?s=612x612&w=0&k=20&c=eatUvWzYnUGxJH0FH_XVNccok963hNRtSHv9lsjYUik=",
-    subtitle:"",
+
     features: [
       {
         title: "Email-Based OTP Login",
@@ -1725,7 +1763,7 @@ export const customization_data = [
         title: "Custom Email Settings",
         image: "https://plus.unsplash.com/premium_photo-1661375025352-d5a4d633999b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q3VzdG9tJTIwRW1haWwlMjBTZXR0aW5nc3xlbnwwfHwwfHx8MA%3D%3D",
         description: "OTP is sent from your own email ID (you can set this).",
-        
+
 
       },
       {
@@ -2092,23 +2130,22 @@ export const customization_data = [
       },
     ]
   },
- {
+  {
     id: "normal_pos",
     title: "Normal Bill Printing to POS Bill Printing",
-     banner: "https://www.pospaper.com/cdn/shop/articles/image_fx__6_1200x1200.png?v=1727709720",
-   subtitle:"",
-     features: [
+    banner: "https://www.pospaper.com/cdn/shop/articles/image_fx__6_1200x1200.png?v=1727709720",
+    features: [
       {
         title: "Objective:",
         image: "https://dcodeinternational.com/wp-content/uploads/2025/04/%E6%89%93%E5%8D%B0%E6%9C%BA1.jpg",
-         description: " To change the default normal sales invoice into a POS-style bill, with:Compact layout, Auto-print on save (optional), Barcode or QR code (optional), Thermal or small paper support, Fast billing with minimum input.",
-      
+        description: " To change the default normal sales invoice into a POS-style bill, with:Compact layout, Auto-print on save (optional), Barcode or QR code (optional), Thermal or small paper support, Fast billing with minimum input.",
+
       },
       {
         title: "Summary of What You Get:",
-        image:"https://cdn.shopify.com/shopifycloud/help-center/manual/sell-in-person/hardware/receipt-printer/zero-ip-address.png",
+        image: "https://cdn.shopify.com/shopifycloud/help-center/manual/sell-in-person/hardware/receipt-printer/zero-ip-address.png",
         description: "Small-sized POS print layout, Faster billing process, Optional auto print, Multiple payment options, Print logo, QR, or barcode, Suitable for petrol pump, retail, grocery.",
-       
+
       },
     ]
 
@@ -2116,8 +2153,7 @@ export const customization_data = [
   {
     id: "dairy_integration",
     title: "Dairy Integration with Dairy Software Via API",
-    banner:"https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg",
-    subtitle:"",
+    banner: "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg",
     features: [
 
       {
@@ -2206,9 +2242,8 @@ export const customization_data = [
   {
     id: "recycle_bin",
     title: "Recycle Bin Voucher Delete by Passwords",
-   banner: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg",
-   subtitle:"", 
-   features: [
+    banner: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg",
+    features: [
 
       {
         title: "Background Deletion Monitoring",
@@ -2276,8 +2311,7 @@ export const customization_data = [
   {
     id: "material_requisition",
     title: "Material Requisition",
-    banner:  "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
-   subtitle:"",
+    banner: "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
     features: [
 
       {
@@ -2366,9 +2400,7 @@ export const customization_data = [
   {
     id: "bulk_cost_adjustment",
     title: "Random Bulk Cost Adjustment Entries",
-    banner:"https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg",
-    subtitle:"",
-
+    banner: "https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg",
     features: [
 
       {
