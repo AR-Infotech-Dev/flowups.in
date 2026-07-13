@@ -35,12 +35,124 @@ const features = [
   },
 ];
 
-const workflow = [
-  ["01", "Discover", "Understand the business, users, constraints, and the outcome that matters."],
-  ["02", "Design", "Shape a focused solution, experience, and implementation roadmap."],
-  ["03", "Build", "Develop, integrate, test, and refine with practical milestones."],
-  ["04", "Support", "Launch confidently and keep improving as the business evolves."],
+// **********************************************************************************************************************
+
+const whyflowups = [
+  {
+    icon: "bi bi-file-earmark-code",
+    title: "Tally Specialization",
+    text: "Strong experience in Tally customization and business logic.",
+  },
+  {
+    icon: "bi bi-diagram-3",
+    title: "Workflow Intelligence",
+    text: "Ability to understand complex workflows and convert them into software structure.",
+  },
+  {
+    icon: "bi bi-window-stack",
+    title: "Unified Ecosystem",
+    text: "Tally and custom software development under one team.",
+  },
+  {
+    icon: "bi bi-gear-wide-connected",
+    title: "Practical Execution",
+    text: "Practical approach to requirement gathering and implementation.",
+  },
+  {
+    icon: "bi bi-translate",
+    title: "Bilingual Support",
+    text: "Support for both technical and business-side discussions.",
+  },
+  {
+    icon: "bi bi-diagram-2",
+    title: "Schema Architecting",
+    text: "Capability to build full schemas for new software requirements.",
+  },
+  {
+    icon: "bi bi-code-slash",
+    title: "Full-Stack Power",
+    text: "Experienced development team for web, mobile, TDL, and full stack projects.",
+  },
+  {
+    icon: "bi bi-binoculars",
+    title: "Long-term Vision",
+    text: "Long-term support and enhancement mindset.",
+  },
+  {
+    icon: "bi bi-people",
+    title: "Corporate Synergy",
+    text: "Corporate communication with practical execution.",
+  },
 ];
+
+// *************************************************************************************************************************
+
+const workflow = [
+  ["01", "Requirement Study", "We understand your business process, current software usage, pain points, reporting needs, users, controls, and expected output."],
+  ["02", "Logic & Schema Planning", "We prepare the business logic, data structure, module flow, user roles, reports, and integration requirements before development starts."],
+  ["03", "Solution Design", "We finalize the screens, fields, approval flow, entry process, reports, print formats, and automation rules."],
+  ["04", "Development", "Our development team builds the TDL module, Tally customization, web application, mobile app, API, or integration as per the approved scope."],
+  ["05", "Testing & Refinement", "We test the solution with practical business scenarios, sample data, edge cases, user roles, and report outputs."],
+  ["06", "Implementation & Training", "We deploy the solution, configure it for your workflow, and train your team so they can use it confidently."],
+  ["07", "Support & Improvement", "After implementation, we continue to support fixes, improvements, enhancements, and future changes as your business grows."],
+];
+
+// **********************************************************************************************************************
+
+const support = [
+  {
+    icon: "bi bi-life-preserver",
+    title: "Tally customization support",
+    text: "Expert guidance on tailoring your Tally environment to specific operational needs.",
+  },
+  {
+    icon: "bi bi-bug",
+    title: "TDL issue resolution",
+    text: "Debugging and optimizing Tally Definition Language scripts for seamless performance.",
+  },
+  {
+    icon: "bi bi-tools",
+    title: "Software bug fixing",
+    text: "Rapid identification and patching of software anomalies to minimize downtime.",
+  },
+  {
+    icon: "bi bi-stars",
+    title: "Feature enhancements",
+    text: "Iterative updates to scale your software capabilities alongside your growing business.",
+  },
+  {
+    icon: "bi bi-person-video3",
+    title: "User training",
+    text: "Comprehensive workshops to ensure your team masters every aspect of the new system.",
+  },
+  {
+    icon: "bi bi-pencil-square",
+    title: "Data correction guidance",
+    text: "Professional oversight for maintaining data integrity and fixing ledger discrepancies.",
+  },
+  {
+    icon: "bi bi-diagram-3",
+    title: "API and integration monitoring",
+    text: "Real-time tracking of integration health to ensure continuous data flow between apps.",
+  },
+  {
+    icon: "bi bi-file-earmark-bar-graph",
+    title: "Report changes",
+    text: "Modifying existing analytical reports to provide better business insights.",
+  },
+  {
+    icon: "bi bi-printer",
+    title: "Print format changes",
+    text: "Updating document designs for invoices, vouchers, and statements to match branding.",
+  },
+  {
+    icon: "bi bi-headset",
+    title: "Remote and client-side coordination",
+    text: "Flexible support options via remote desktop or on-site visits based on urgency.",
+  },
+];
+
+// *************************************************************************************************************************
 
 const useCases = [
   ["bi-building", "Growing Businesses", "Build a stronger digital foundation for the next stage of growth."],
@@ -60,24 +172,36 @@ const integrations = [
 
 const faqs = [
   [
-    "What does FlowupS Technologies build?",
-    "We build software products, business systems, websites, integrations, and customized digital solutions.",
+    "Can FlowupS customize Tally Prime as per our business process?",
+    "Yes. FlowupS Technologies develops custom TDL modules and Tally Prime customizations for billing, inventory, reports, security, approvals, industry workflows, and integrations.",
   ],
   [
-    "What products do you offer?",
-    "Our current product portfolio includes CallDesk and Sathi Connect, supported by implementation and customization services.",
+    "Can you integrate Tally with our existing software?",
+    "Yes. We can integrate Tally with CRM, ERP, mobile apps, web portals, e-commerce platforms, POS systems, payroll software, inventory tools, and custom applications using suitable integration methods.",
   ],
   [
-    "Can your solutions connect with our current software?",
-    "Integration depends on the tools and APIs available. We review your current setup and recommend the most practical approach.",
+    "Do you build custom software from scratch?",
+    "Yes. We develop custom web applications, mobile applications, dashboards, CRM systems, ERP modules, support systems, and workflow-based business software.",
   ],
   [
-    "Do you provide onboarding and training?",
-    "Yes. We support discovery, setup, process mapping, user onboarding, and training so your team can adopt the solution confidently.",
+    "Can you prepare the complete software logic and schema?",
+    "Yes. We can study your business requirement and prepare the complete logic, module structure, data flow, user roles, reports, and development roadmap.",
   ],
   [
-    "How do we get started?",
-    "Book a discovery call. We will understand your workflow, identify priorities, and outline the right next steps.",
+    "Do you provide support after implementation?",
+    "Yes. We provide support for training, bug fixing, enhancements, report changes, Tally customization changes, integration monitoring, and future improvements.",
+  ],
+  [
+    "Can you build industry-specific Tally modules?",
+    "Yes. We can build Tally modules for education, hospital, garment, petrol pump, APMC/ADAT, jewellery, dairy, retail, distribution, manufacturing, and other industries.",
+  ],
+  [
+    "Is CallDesk suitable for customer support teams?",
+    "Yes. CallDesk is useful for businesses that need to manage support tickets, customer complaints, service requests, assignments, follow-ups, and support team performance.",
+  ],
+  [
+    "What is Sathi Connect?",
+    "Sathi Connect is a connectivity bridge between the Seeds Portal and Tally Prime. It helps reduce manual entry and improves data movement between portal workflows and Tally.",
   ],
 ];
 
@@ -268,13 +392,12 @@ function LandingSections() {
       <section id="about" className="product-about section">
         <div className="container">
           <div className="row align-items-center gy-5">
-            <div className="col-lg-5" data-aos="fade-right">
-              <span className="home-eyebrow">FlowupS Technologies Pvt. Ltd.</span>
-              <h2>We turn business challenges into focused technology.</h2>
+            <div className="col-lg-6" data-aos="fade-right">
+              <span className="home-eyebrow">Tally, Integration & Software Solutions</span>
+              <h2>FlowupS Technologies delivers Tally expertise, custom software, and seamless integration solutions with end-to-end project support.</h2>
               <p className="product-about-lead">
-                We build useful software products and tailored digital solutions,
-                combining product thinking, engineering, integration, and
-                dependable implementation support.
+                FlowupS Technologies combines Tally expertise with custom software development to create practical business solutions,
+                seamless integrations, & automation systems backed by end-to-end project support.
               </p>
               <div className="product-checks">
                 <span><i className="bi bi-check2-circle" />Business-first product thinking</span>
@@ -289,7 +412,7 @@ function LandingSections() {
                 Know our company <i className="bi bi-arrow-right" />
               </Link>
             </div>
-            <div className="col-lg-7" data-aos="fade-left">
+            <div className="col-lg-6" data-aos="fade-left">
               <div className="company-portfolio-panel">
                 <div className="company-panel-head"><span>Company portfolio</span><strong>Products + Solutions</strong></div>
                 <span className="company-product-pill pill-calldesk"><i className="bi bi-telephone" />CallDesk</span>
@@ -356,10 +479,48 @@ function LandingSections() {
 
       <FeaturedServices />
 
+{/* ******************************************************************************************************************/}
+      <section id="whyflowups" className="home-whyus section light-blue-background">
+        <div className="container">
+          <div className="why-flowups-header" data-aos="fade-up">
+            <span className="home-eyebrow">Our Distinction</span>
+              <p>Why Businesses Choose FlowupS</p>
+              <a>FlowupS Technologies combines Tally expertise, software development
+              capability, practical business understanding, and strong client
+              coordination. This helps us deliver solutions that are not only
+              technically correct, but also useful in daily operations.</a>
+          </div>
+
+          <div className="row gy-4 mt-5">
+            {whyflowups.map((whyflowups, index) => (
+              <div
+                className="col-lg-4 col-md-6"
+                key={whyflowups.title}
+                data-aos="fade-up"
+                data-aos-delay={index * 60}
+              >
+                <article className="home-feature-card h-100">
+                  <div>
+                    <i className={`bi ${whyflowups.icon}`} />
+                  </div>
+
+                  <h3>{whyflowups.title}</h3>
+
+                  <p>{whyflowups.text}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+{/* ********************************************************************************************************** */}
+
       <section className="home-workflow section dark-background">
         <div className="container section-title" data-aos="fade-up">
-          <h2>How It Works</h2>
-          <p>A clear path from business need to working solution</p>
+          <h2>How We Work</h2>
+          <p>Our process is designed to deliver practical solutions aligned with your business workflow,
+            from understanding requirements to development.</p>
         </div>
         <div className="container">
           <div className="row gy-4">
@@ -375,6 +536,42 @@ function LandingSections() {
           </div>
         </div>
       </section>
+
+{/* ******************************************************************************************************************/}
+      <section id="support" className="home-support section light-blue-background">
+        <div className="container">
+          <div className="support-header" data-aos="fade-up">
+            <span className="home-eyebrow">Reliability That Never Quits</span>
+              <p>Support That Continues After Delivery</p>
+              <a>FlowupS Technologies believes that software delivery is not the end of the relationship. 
+                Businesses need support during adoption, training, issue resolution, version changes, and future improvements. 
+                Our team helps clients with practical support so that their solution continues to work smoothly.</a>
+          </div>
+
+          <div className="row gy-4 mt-5">
+            {support.map((support, index) => (
+              <div
+                className="col-lg-4 col-md-6"
+                key={support.title}
+                data-aos="fade-up"
+                data-aos-delay={index * 60}
+              >
+                <article className="home-feature-card h-100">
+                  <div>
+                    <i className={`bi ${support.icon}`} />
+                  </div>
+
+                  <h3>{support.title}</h3>
+
+                  <p>{support.text}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+{/* ********************************************************************************************************** */}
 
       <section className="home-use-cases section">
         <div className="container section-title" data-aos="fade-up">

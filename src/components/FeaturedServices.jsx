@@ -27,6 +27,7 @@ function FeaturedServices() {
               data-aos="fade-up"
               data-aos-delay={index * 90}
             >
+              
               <Link className="featured-service-image" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
                 <img
                   src={`/images/${service.img}`}
@@ -64,3 +65,10 @@ function FeaturedServices() {
 }
 
 export default FeaturedServices;
+
+
+
+
+
+
+

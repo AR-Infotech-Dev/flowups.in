@@ -25,6 +25,7 @@ const Hero = () => {
       id="hero"
       className="hero section dark-background"
       style={{
+        // backgroundImage: "https://plus.unsplash.com/premium_photo-1670213989456-17c05e5f16e3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8",
         backgroundImage: "url(/images/hero-bg.jpg)",
         backgroundSize: "cover"
       }}

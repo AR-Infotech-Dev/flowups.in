@@ -18,8 +18,8 @@ function Footer() {
               <p>Padtani Complex, behind Joshi palace,</p>
               <p>opp. Panhale Pedha, Punjabi Colony,</p>
               <p>Sangamner, Maharashtra 422605</p>
-              <p className="mt-3"><strong>Phone:</strong> <span>+91 96654 78057</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p className="mt-3"><strong>Phone:</strong> <span>+91 96654 78057 / +91 77569 23602</span></p>
+              <p><strong>Email:</strong> <span>admin@flowups.in</span></p>
             </div>
             <div className="social-links d-flex mt-4">
               <a href=""><i className="bi bi-twitter-x"></i></a>
