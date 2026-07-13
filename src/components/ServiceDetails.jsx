@@ -339,7 +339,7 @@ const ServiceDetails = () => {
 
 
                   <div className="row g-3 mt-5">
-                    <h2 className="text-center fw-semibold">TALLY CUSTOMIZATION CATEGORIES</h2>
+                    <h2 className="text-center fw-semibold">Taly Customization Categories</h2>
                     {service.categories?.[2]?.items?.map((group) => (
                       <div key={group.category} className="mb-5">
                         <h3 className="fw-bold mb-4">{group.category}</h3>
