@@ -98,7 +98,7 @@ export const servicesData = [
 
   {
     id: "crm",
-    title: "Software Development",
+    title: "Custom Software Development Services",
     subtitle: "We design and develop responsive, high-performance websites and web applications tailored to your business needs.",
     description:
       "Custom software solutions to automate and scale your business operations.",
@@ -200,164 +200,6 @@ export const servicesData = [
         id: "tally-customise",
         slug: "customization",
         title: "Tally Customise",
-        // items: [
-
-        //   {
-        //     name: "School / College ERP",
-        //     slug: "school_college",
-        //     icon: "bi-mortarboard"
-        //   },
-
-        //   {
-        //     name: "Wholesale Garment",
-        //     slug: "wholesale_garment",
-        //     icon: "bi-bag "
-        //   },
-
-        //   {
-        //     name: "Mobile Shoppe/ Home Application",
-        //     slug: "mobile_shoppe_home_application",
-        //     icon: "bi-phone"
-        //   },
-
-        //   {
-        //     name: "Audit Trail",
-        //     slug: "audit_trail",
-        //     icon: "bi-clock-history"
-        //   },
-
-        //   {
-        //     name: "Purchase Requisition Note",
-        //     slug: "purchase_note",
-        //     icon: "bi-cart-check"
-        //   },
-
-        //   {
-        //     name: "Discount Schema(Payment-Based)",
-        //     slug: "discount_schema",
-        //     icon: "bi-percent"
-        //   },
-
-        //   {
-        //     name: "Bank Statement",
-        //     slug: "bank_statement",
-        //     icon: "bi-bank"
-        //   },
-
-
-        //   {
-        //     name: "Hospital Management",
-        //     slug: "hospital_management",
-        //     icon: "bi-heart-pulse"
-        //   },
-
-        //   {
-        //     name: "Auto Email",
-        //     slug: "auto_email",
-        //     icon: "bi-envelope"
-        //   },
-
-        //   {
-        //     name: "Petrol Pump",
-        //     slug: "petrol_pump",
-        //     icon: "bi-fuel-pump"
-        //   },
-
-        //   {
-        //     name: "Broker/ Salesman",
-        //     slug: "broker_salesman",
-        //     icon: "bi-people"
-        //   },
-
-
-        //   {
-        //     name: "APMC / ADA",
-        //     slug: "apmc_ada",
-        //     icon: "bi-shop"
-        //   },
-        //   {
-        //     name: "Fruit Adat",
-        //     slug: "fruit_adat",
-        //     icon: "bi-basket"
-        //   },
-        //   {
-        //     name: "Advanced Security",
-        //     slug: "advanced_security",
-        //     icon: "bi-shield-lock"
-        //   },
-
-
-        //   {
-        //     name: "Email OTP Login for Admin",
-        //     slug: "email_otp",
-        //     icon: "bi-shield-check"
-        //   },
-
-        //   {
-        //     name: "Warranty & AMC",
-        //     slug: "warranty_amc",
-        //     icon: "bi-patch-check"
-        //   },
-
-        //   {
-        //     name: "Other Software Integration With Tally Via API",
-        //     slug: "api_integration",
-        //     icon: "bi-diagram-3"
-        //   },
-
-        //   {
-        //     name: "Multi-Settelment With Auto Receipt",
-        //     slug: "multi_settlement",
-        //     icon: "bi-receipt"
-        //   },
-
-        //   {
-        //     name: "Jewellary Module",
-        //     slug: "jewellary_module",
-        //     icon: "bi-gem"
-        //   },
-
-        //   {
-        //     name: "Share Market",
-        //     slug: "share_market",
-        //     icon: "bi-graph-up"
-        //   },
-        //   {
-        //     name: "Document Linking System in Tally Prime Using DLL",
-        //     slug: "doc_link",
-        //     icon: "bi-link-45deg"
-        //   },
-
-        //   {
-        //     name: "Normal Bill Printing to POS Bill Printing",
-        //     slug: "normal_pos",
-        //     icon: "bi-printer"
-        //   },
-
-        //   {
-        //     name: "Dairy Integration with Dairy Software Via API",
-        //     slug: "dairy_integration",
-        //     icon: "bi-cup-hot"
-        //   },
-
-        //   {
-        //     name: "Recycle Bin Voucher Delete by Password",
-        //     slug: "recycle_bin",
-        //     icon: "bi-trash"
-        //   },
-
-        //   {
-        //     name: "Material Requisition",
-        //     slug: "material_requisition",
-        //     icon: "bi-box-seam"
-        //   },
-
-        //   {
-        //     name: "Random Bulk Cost Adjustment Entries",
-        //     slug: "bulk_cost_adjustment",
-        //     icon: "bi-calculator"
-        //   }
-        // ],
         items: [
           {
             category: "Industry-Specific Business Modules",
@@ -384,9 +226,9 @@ export const servicesData = [
                 icon: "bi-heart-pulse"
               },
               {
-                name:"APMC / ADA",
-                slug:"apmc_ada",
-                icon:"bi-shop"
+                name: "APMC / ADA",
+                slug: "apmc_ada",
+                icon: "bi-shop"
               },
               {
                 name: "Petrol Pump",
@@ -412,14 +254,20 @@ export const servicesData = [
                 name: "Fruit Adat",
                 slug: "fruit_adat",
                 icon: "bi-basket"
+              },
+              {
+                name: "Material Requisition",
+                slug: "material_requisition",
+                icon: "bi-box-seam"
               }
+
 
             ]
           },
 
           {
             category: "Billing, Invoice & POS Customization",
-            
+
             services: [
               {
                 name: "Normal Bill Printing to POS Bill Printing",
@@ -427,11 +275,11 @@ export const servicesData = [
                 icon: "bi-printer"
               },
               {
-                name:"Discount Schema(Payment-Based)",
-                slug:"discount_schema",
-                icon:"bi-percent"
+                name: "Discount Schema(Payment-Based)",
+                slug: "discount_schema",
+                icon: "bi-percent"
               },
-              
+
             ]
           },
 
@@ -439,15 +287,120 @@ export const servicesData = [
             category: "Inventory, Stock & Manufacturing",
             services: [
               {
-                name: "Hospital",
-                slug: "hospital"
+                name: "Bank Statement",
+                slug: "bank_statement",
+                icon: "bi-bank"
               },
               {
-                name: "Medical Store",
-                slug: "medical-store"
+                name: "Purchase Requisition Note",
+                slug: "purchase_note",
+                icon: "bi-cart-check"
+              },
+            ]
+          },
+          {
+            category: "Reports, MIS & Business Analysis",
+            services: [
+              {
+                name: "Multi-Settelment With Auto Receipt",
+                slug: "multi_settlement",
+                icon: "bi-receipt"
+              },
+              {
+                name: "MIS Dashboards",
+                slug: "mis_dashboards",
+                icon: "bi-graph-up"
+              },
+              {
+                name: "Multi-Settelment With Auto Receipt",
+                slug: "multi_settlement",
+                icon: "bi-receipt"
+              }
+            ]
+          },
+          {
+            category: "Security, Controls & Approval Workflow",
+            services: [
+              {
+                name: "Advanced Security",
+                slug: "advanced_security",
+                icon: "bi-shield-lock"
+              },
+              {
+                name: "Email OTP Login for Admin",
+                slug: "email_otp",
+                icon: "bi-shield-check"
+              },
+              {
+                name: "Recycle Bin Voucher Delete by Password",
+                slug: "recycle_bin",
+                icon: "bi-trash"
+              }
+            ]
+          },
+          {
+            category: "GST, Tax & Compliance",
+            services: [
+              {
+                name: "Discount Schema(Payment-Based)",
+                slug: "discount_schema",
+                icon: "bi-percent"
+              },
+              {
+                name: "Tax Compliance",
+                slug: "tax_compliance",
+                icon: "bi-gear"
+              }
+            ]
+          },
+          {
+            category: "Import, Export, Email & Document Automation",
+            services: [
+              {
+                name: "Document Linking System in Tally Prime Using DLL",
+                slug: "doc_link",
+                icon: "bi-link-45deg"
+
+
+              }
+            ]
+          },
+          {
+            category: "Payment, Receipt & Outstanding Management",
+            services: [
+              {
+                name: "Normal Bill Printing to POS Bill Printing",
+                slug: "normal_pos",
+                icon: "bi-printer"
+              }
+            ]
+          },
+          {
+            category: "Workflow, Task & Utility Modules",
+            services: [
+              {
+                name: "Normal Bill Printing to POS Bill Printing",
+                slug: "normal_pos",
+                icon: "bi-printer"
+              },
+              {
+                name: "Warranty & AMC",
+                slug: "warranty_amc",
+                icon: "bi-patch-check"
+              },
+              {
+                name: "Other Software Integration With Tally Via API",
+                slug: "api_integration",
+                icon: "bi-diagram-3"
+              },
+              {
+                name: "Random Bulk Cost Adjustment Entries",
+                slug: "bulk_cost_adjustment",
+                icon: "bi-calculator"
               }
             ]
           }
+
         ]
       },
     ],
