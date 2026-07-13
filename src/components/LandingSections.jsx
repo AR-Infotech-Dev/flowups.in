@@ -35,6 +35,58 @@ const features = [
   },
 ];
 
+// **********************************************************************************************************************
+
+const whyflowups = [
+  {
+    icon: "bi bi-file-earmark-code",
+    title: "Tally Specialization",
+    text: "Strong experience in Tally customization and business logic.",
+  },
+  {
+    icon: "bi bi-diagram-3",
+    title: "Workflow Intelligence",
+    text: "Ability to understand complex workflows and convert them into software structure.",
+  },
+  {
+    icon: "bi bi-window-stack",
+    title: "Unified Ecosystem",
+    text: "Tally and custom software development under one team.",
+  },
+  {
+    icon: "bi bi-gear-wide-connected",
+    title: "Practical Execution",
+    text: "Practical approach to requirement gathering and implementation.",
+  },
+  {
+    icon: "bi bi-translate",
+    title: "Bilingual Support",
+    text: "Support for both technical and business-side discussions.",
+  },
+  {
+    icon: "bi bi-diagram-2",
+    title: "Schema Architecting",
+    text: "Capability to build full schemas for new software requirements.",
+  },
+  {
+    icon: "bi bi-code-slash",
+    title: "Full-Stack Power",
+    text: "Experienced development team for web, mobile, TDL, and full stack projects.",
+  },
+  {
+    icon: "bi bi-binoculars",
+    title: "Long-term Vision",
+    text: "Long-term support and enhancement mindset.",
+  },
+  {
+    icon: "bi bi-people",
+    title: "Corporate Synergy",
+    text: "Corporate communication with practical execution.",
+  },
+];
+
+// *************************************************************************************************************************
+
 const workflow = [
   ["01", "Requirement Study", "We understand your business process, current software usage, pain points, reporting needs, users, controls, and expected output."],
   ["02", "Logic & Schema Planning", "We prepare the business logic, data structure, module flow, user roles, reports, and integration requirements before development starts."],
@@ -44,6 +96,63 @@ const workflow = [
   ["06", "Implementation & Training", "We deploy the solution, configure it for your workflow, and train your team so they can use it confidently."],
   ["07", "Support & Improvement", "After implementation, we continue to support fixes, improvements, enhancements, and future changes as your business grows."],
 ];
+
+// **********************************************************************************************************************
+
+const support = [
+  {
+    icon: "bi bi-life-preserver",
+    title: "Tally customization support",
+    text: "Expert guidance on tailoring your Tally environment to specific operational needs.",
+  },
+  {
+    icon: "bi bi-bug",
+    title: "TDL issue resolution",
+    text: "Debugging and optimizing Tally Definition Language scripts for seamless performance.",
+  },
+  {
+    icon: "bi bi-tools",
+    title: "Software bug fixing",
+    text: "Rapid identification and patching of software anomalies to minimize downtime.",
+  },
+  {
+    icon: "bi bi-stars",
+    title: "Feature enhancements",
+    text: "Iterative updates to scale your software capabilities alongside your growing business.",
+  },
+  {
+    icon: "bi bi-person-video3",
+    title: "User training",
+    text: "Comprehensive workshops to ensure your team masters every aspect of the new system.",
+  },
+  {
+    icon: "bi bi-pencil-square",
+    title: "Data correction guidance",
+    text: "Professional oversight for maintaining data integrity and fixing ledger discrepancies.",
+  },
+  {
+    icon: "bi bi-diagram-3",
+    title: "API and integration monitoring",
+    text: "Real-time tracking of integration health to ensure continuous data flow between apps.",
+  },
+  {
+    icon: "bi bi-file-earmark-bar-graph",
+    title: "Report changes",
+    text: "Modifying existing analytical reports to provide better business insights.",
+  },
+  {
+    icon: "bi bi-printer",
+    title: "Print format changes",
+    text: "Updating document designs for invoices, vouchers, and statements to match branding.",
+  },
+  {
+    icon: "bi bi-headset",
+    title: "Remote and client-side coordination",
+    text: "Flexible support options via remote desktop or on-site visits based on urgency.",
+  },
+];
+
+// *************************************************************************************************************************
 
 const useCases = [
   ["bi-building", "Growing Businesses", "Build a stronger digital foundation for the next stage of growth."],
@@ -283,11 +392,11 @@ function LandingSections() {
       <section id="about" className="product-about section">
         <div className="container">
           <div className="row align-items-center gy-5">
-            <div className="col-lg-5" data-aos="fade-right">
+            <div className="col-lg-6" data-aos="fade-right">
               <span className="home-eyebrow">Tally, Integration & Software Solutions</span>
               <h2>FlowupS Technologies delivers Tally expertise, custom software, and seamless integration solutions with end-to-end project support.</h2>
               <p className="product-about-lead">
-                FlowupS Technologies combines Tally expertise with custom software development to create practical business solutions, 
+                FlowupS Technologies combines Tally expertise with custom software development to create practical business solutions,
                 seamless integrations, & automation systems backed by end-to-end project support.
               </p>
               <div className="product-checks">
@@ -303,7 +412,7 @@ function LandingSections() {
                 Know our company <i className="bi bi-arrow-right" />
               </Link>
             </div>
-            <div className="col-lg-7" data-aos="fade-left">
+            <div className="col-lg-6" data-aos="fade-left">
               <div className="company-portfolio-panel">
                 <div className="company-panel-head"><span>Company portfolio</span><strong>Products + Solutions</strong></div>
                 <span className="company-product-pill pill-calldesk"><i className="bi bi-telephone" />CallDesk</span>
@@ -371,22 +480,34 @@ function LandingSections() {
       <FeaturedServices />
 
 {/* ******************************************************************************************************************/}
-
-      <section className="home-workflow section dark-background">
-        <div className="container section-title" data-aos="fade-up">
-          <h2>How We Work</h2>
-          <p>Our process is designed to deliver practical solutions aligned with your business workflow, 
-            from understanding requirements to development.</p>
-        </div>
+      <section id="whyflowups" className="home-whyus section light-blue-background">
         <div className="container">
-          <div className="row gy-4">
-            {workflow.map(([number, title, text], index) => (
-              <div className="col-lg-3 col-md-6" key={number} data-aos="fade-up" data-aos-delay={index * 80}>
-                <div className="home-workflow-step h-100">
-                  <span>{number}</span>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
+          <div className="why-flowups-header" data-aos="fade-up">
+            <span className="home-eyebrow">Our Distinction</span>
+              <p>Why Businesses Choose FlowupS</p>
+              <a>FlowupS Technologies combines Tally expertise, software development
+              capability, practical business understanding, and strong client
+              coordination. This helps us deliver solutions that are not only
+              technically correct, but also useful in daily operations.</a>
+          </div>
+
+          <div className="row gy-4 mt-5">
+            {whyflowups.map((whyflowups, index) => (
+              <div
+                className="col-lg-4 col-md-6"
+                key={whyflowups.title}
+                data-aos="fade-up"
+                data-aos-delay={index * 60}
+              >
+                <article className="home-feature-card h-100">
+                  <div>
+                    <i className={`bi ${whyflowups.icon}`} />
+                  </div>
+
+                  <h3>{whyflowups.title}</h3>
+
+                  <p>{whyflowups.text}</p>
+                </article>
               </div>
             ))}
           </div>
@@ -398,7 +519,7 @@ function LandingSections() {
       <section className="home-workflow section dark-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>How We Work</h2>
-          <p>Our process is designed to deliver practical solutions aligned with your business workflow, 
+          <p>Our process is designed to deliver practical solutions aligned with your business workflow,
             from understanding requirements to development.</p>
         </div>
         <div className="container">
@@ -415,6 +536,42 @@ function LandingSections() {
           </div>
         </div>
       </section>
+
+{/* ******************************************************************************************************************/}
+      <section id="support" className="home-support section light-blue-background">
+        <div className="container">
+          <div className="support-header" data-aos="fade-up">
+            <span className="home-eyebrow">Reliability That Never Quits</span>
+              <p>Support That Continues After Delivery</p>
+              <a>FlowupS Technologies believes that software delivery is not the end of the relationship. 
+                Businesses need support during adoption, training, issue resolution, version changes, and future improvements. 
+                Our team helps clients with practical support so that their solution continues to work smoothly.</a>
+          </div>
+
+          <div className="row gy-4 mt-5">
+            {support.map((support, index) => (
+              <div
+                className="col-lg-4 col-md-6"
+                key={support.title}
+                data-aos="fade-up"
+                data-aos-delay={index * 60}
+              >
+                <article className="home-feature-card h-100">
+                  <div>
+                    <i className={`bi ${support.icon}`} />
+                  </div>
+
+                  <h3>{support.title}</h3>
+
+                  <p>{support.text}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+{/* ********************************************************************************************************** */}
 
       <section className="home-use-cases section">
         <div className="container section-title" data-aos="fade-up">
