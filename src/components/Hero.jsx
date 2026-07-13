@@ -44,9 +44,11 @@ const Hero = () => {
         </span>
       </div>
       <div className="container text-center">
-        <h2>Tally Customization & Software Development for Growing Businesses</h2>
+        <h2>Tally Customization & Software Development<br />for Growing Businesses</h2>
         <p>
-         FlowupS Technologies Pvt. Ltd. helps businesses build practical Tally solutions, custom software, integrations, dashboards, and support systems that match real business workflows.
+          FlowupS Technologies Pvt. Ltd. helps businesses build practical Tally solutions,
+          custom software, integrations, dashboards, and support systems that match real
+          business workflows.
         </p>
         {/* <p>
           <small>
@@ -60,7 +62,7 @@ const Hero = () => {
           </a>
 
           <a href="#features" className="btn-watch-video">
-            Explore Our Solutions
+           Explore Our Solutions
           </a>
         </div>
       </div>
