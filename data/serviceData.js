@@ -55,8 +55,7 @@ export const servicesData = [
     img: "services-1.jpg",
     icon: "bi-code-slash",
     subtitle: "Tailoring Tally to specific business needs.",
-    description:
-      "We create modern and responsive website designs tailored to your business.",
+    description: "We create modern and responsive website designs tailored to your business.",
     image: "/images/services.jpg",
     points: [
       "Responsive design",
@@ -369,10 +368,9 @@ export const customization_data = [
     title: "School/ College",
     banner: "/images/school.png",
     subtitle:
-      "Complete ERP & CRM solution for educational institutions.",
+      "For schools and colleges, FlowupS can build Tally-based or custom software workflows for admissions, student records, fees, documents, certificates, transport, staff payroll, and reporting.",
 
-    description:
-      "Manage admissions, fees, attendance, transport, payroll and academics easily.",
+   
 
     features: [
       {
@@ -450,6 +448,7 @@ export const customization_data = [
     id: 'wholesale_garment',
     title: "Wholesale Garment",
    banner: "/images/services-2.jpg",
+    subtitle:"",
     features: [
       {
         title: "Multiple Types of Stock Items",
@@ -503,6 +502,7 @@ export const customization_data = [
     id: 'mobile_shoppe_home_application',
     title: "Mobile Shoppe/Home Application",
     banner: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg",
+    subtitle:"",
     features: [
       {
         title: "IMEI and Serial Number Tracking",
@@ -557,7 +557,7 @@ export const customization_data = [
     title: "Audit Trail",
     banner:
     "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
-
+     subtitle:"",
     features: [
 
       {
@@ -656,6 +656,7 @@ export const customization_data = [
     id: 'purchase_note',
     title: "Purchase Requisition Note(PRN)",
     banner: "/images/services-2.jpg",
+    subtitle:"",
     features: [
       {
         title: " Create Requisition Notes",
@@ -736,6 +737,7 @@ export const customization_data = [
     id: 'discount_schema',
     title: "Discount Schema(Payment-Based)",
    banner: "/images/services-2.jpg",
+   subtitle:"",
     features: [
 
       {
@@ -834,7 +836,8 @@ export const customization_data = [
     id: "bank_statement",
     title: "Bank Statement Import ",
   banner: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJhbmt8ZW58MHx8MHx8fDA%3D",
-    features: [
+  subtitle:"",  
+  features: [
       {
         title: "Import Excel Bank Statements into Tally",
         image: "https://images.unsplash.com/photo-1763872849312-67984fbf5f68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEJBTkslMjBTVEFURU1FTlQlMjBJTVBPUlQlMjBNT0RVTEV8ZW58MHx8MHx8fDA%3D",
@@ -897,9 +900,12 @@ export const customization_data = [
   },
   {
     id: "hospital_management",
-    title: " Hosptal Management ",
+    title: " Hospital Management ",
     banner: "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg",
-    features: [
+   
+   subtitle:"For hospitals and clinics, we can support OPD/IPD billing, patient records, bed management, doctor management, receipts, discharge summaries, and hospital financial reporting.",
+   subtitle:"",
+   features: [
       {
         title: "Ward and Bed Management",
         image: "https://images.unsplash.com/photo-1628373961147-87e7f514a35f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGhvc3BpdGFsfGVufDB8fDB8fHww",
@@ -1009,6 +1015,7 @@ export const customization_data = [
     id: "auto_email",
     title: "Auto Email",
     banner: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+    subtitle: "Automate your email communications with Tally.",
     features: [
 
       {
@@ -1127,6 +1134,7 @@ export const customization_data = [
     id: "petrol_pump",
     title: "Petrol Pump",
     banner: "",
+    subtitle:"",
     features: [
 
       {
@@ -1267,6 +1275,7 @@ export const customization_data = [
     id: "broker_salesman",
     title: "Broker Salesman",
    banner: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+   subtitle:"",
     features: [
 
       {
@@ -1346,6 +1355,7 @@ export const customization_data = [
     id: "apmc_ada",
     title: "APMC ADA",
    banner: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
+   subtitle:"",
     features: [
 
       {
@@ -1475,6 +1485,7 @@ export const customization_data = [
     id: "fruit_adat",
     title: "Fruit ADAT",
    banner: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg",
+   subtitle:"",
     features: [
 
       {
@@ -1604,6 +1615,7 @@ export const customization_data = [
     title: "Advanced Security",
    banner:
     "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg",
+    subtitle:"",
 
     features: [
 
@@ -1695,7 +1707,7 @@ export const customization_data = [
     id: "email_otp",
     title: "Email-Based OTP Login",
     banner: "https://media.istockphoto.com/id/1830134328/photo/businesswoman-login-to-the-network-by-username-and-password-on-the-virtual-screen-while.jpg?s=612x612&w=0&k=20&c=eatUvWzYnUGxJH0FH_XVNccok963hNRtSHv9lsjYUik=",
-    
+    subtitle:"",
     features: [
       {
         title: "Email-Based OTP Login",
@@ -1742,6 +1754,7 @@ export const customization_data = [
     id: "warranty_amc",
     title: "Warranty & AMC",
     banner: "https://media.istockphoto.com/id/2202847872/photo/in-this-business-management-concept-a-businessman-erases-a-white-arrow-and-draws-a-yellow.jpg?s=612x612&w=0&k=20&c=VsrUk7MqH5mSwfhhYibYP7Cpjq7P_VAs3u3zMPXejsA=",
+   subtitle:"",
     features: [
       {
         title: "Warranty Tracking",
@@ -1798,6 +1811,7 @@ export const customization_data = [
     id: "api_integration",
     title: "Other Software integration With Tally Via API",
     banner: "https://media.istockphoto.com/id/2168215145/photo/businessman-using-kpi-dashboard-management-data-system-kpi-connected-in-database-for-follow.jpg?s=612x612&w=0&k=20&c=kUNncAVVzQEGnoEkAk0RZpfawjgH1tDx6gbIJ7St-cs=",
+    subtitle:"",
     features: [
       {
         title: "CRM Integration",
@@ -1854,6 +1868,7 @@ export const customization_data = [
     id: "multi_settlement",
     title: "Multi-Settlement With Auto Receipt",
     banner: "https://media.istockphoto.com/id/2263538191/photo/close-up-of-receipt-printing-from-payment-terminal.jpg?s=612x612&w=0&k=20&c=8NB5q8bKoqkBMdPACp2qYsgOcNNdPwPcDCZP7h5JFE8=",
+    subtitle: "",
     features: [
       {
         title: "Sales + Auto Receipt = One Step",
@@ -1909,6 +1924,7 @@ export const customization_data = [
     id: "jewellary_module",
     title: " Jewellery",
     banner: "https://images.unsplash.com/photo-1647312281540-47455957ee2a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGpld2VsbGFyeV9tb2R1bGV8ZW58MHx8MHx8fDA%3D",
+  subtitle:"",
     features: [
       {
         title: "Gold/Silver Sales & Purchase",
@@ -1966,6 +1982,7 @@ export const customization_data = [
     id: "share_market",
     title: " Share Market ",
     banner: "https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U0hBUkUlMjBNQVJLRVQlMjBNT0RVTEV8ZW58MHx8MHx8fDA%3D",
+   subtitle:"",
     features: [
       {
         title: "Share Accounting Management",
@@ -2047,6 +2064,7 @@ export const customization_data = [
     id: "doc_link",
     title: "Document Linking System in tally Prime Using DLL",
     banner: "https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTl8fERvY3VtZW50JTIwTGlua2luZyUyMFN5c3RlbSUyMGluJTIwdGFsbHklMjBQcmltZSUyMFVzaW5nJTIwRExMfGVufDB8fDB8fHww",
+    subtitle:"",
     features: [
       {
         title: "Share Accounting Management",
@@ -2078,7 +2096,8 @@ export const customization_data = [
     id: "normal_pos",
     title: "Normal Bill Printing to POS Bill Printing",
      banner: "https://www.pospaper.com/cdn/shop/articles/image_fx__6_1200x1200.png?v=1727709720",
-    features: [
+   subtitle:"",
+     features: [
       {
         title: "Objective:",
         image: "https://dcodeinternational.com/wp-content/uploads/2025/04/%E6%89%93%E5%8D%B0%E6%9C%BA1.jpg",
@@ -2098,6 +2117,7 @@ export const customization_data = [
     id: "dairy_integration",
     title: "Dairy Integration with Dairy Software Via API",
     banner:"https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg",
+    subtitle:"",
     features: [
 
       {
@@ -2187,7 +2207,8 @@ export const customization_data = [
     id: "recycle_bin",
     title: "Recycle Bin Voucher Delete by Passwords",
    banner: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg",
-    features: [
+   subtitle:"", 
+   features: [
 
       {
         title: "Background Deletion Monitoring",
@@ -2256,6 +2277,7 @@ export const customization_data = [
     id: "material_requisition",
     title: "Material Requisition",
     banner:  "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
+   subtitle:"",
     features: [
 
       {
@@ -2345,6 +2367,8 @@ export const customization_data = [
     id: "bulk_cost_adjustment",
     title: "Random Bulk Cost Adjustment Entries",
     banner:"https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg",
+    subtitle:"",
+
     features: [
 
       {

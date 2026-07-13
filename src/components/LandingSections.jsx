@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FeaturedServices from "./FeaturedServices";
-
+import Leadership from "./Leadership";
 const features = [
   {
     icon: "bi-window-stack",
@@ -455,6 +455,25 @@ function LandingSections() {
             <div><span>02</span><strong>Solutions stay focused</strong><p>Every product, feature, and integration has a clear practical purpose.</p></div>
             <div><span>03</span><strong>Support stays dependable</strong><p>We remain involved through implementation, adoption, and improvement.</p></div>
           </div>
+        </div>
+      </section>
+
+      {/* ****************** */}
+      <section className="home-products section">
+        <div className="container section-title" data-aos="fade-up">
+          <h2>Our Team</h2>
+          <p>Leadership & Team</p>
+        </div>
+        <div className="container">
+           {/* data-aos="fade-up" */}
+          <article className="flex flex-col lg:flex-row items-center gap-10"> 
+            <div className="company-product1-copy w-[430px]">
+              {/* <span className="home-eyebrow">Leadership & Team</span> */}
+              <p>FlowupS Technologies Pvt. Ltd. is powered by directors, developers, sales professionals, support specialists, and technical advisors. Together, the team brings strong business understanding, Tally expertise, software development capability, sales experience, and dependable client support.</p>
+              <Link to="/our-team" className="home-primary-link">Explore Team <i className="bi bi-arrow-right" /></Link>
+            </div>
+            <div><Leadership /></div>
+          </article>
         </div>
       </section>
 
