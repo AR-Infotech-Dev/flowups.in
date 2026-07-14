@@ -25,6 +25,7 @@ const Hero = () => {
       id="hero"
       className="hero section dark-background"
       style={{
+        // backgroundImage: "https://plus.unsplash.com/premium_photo-1670213989456-17c05e5f16e3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8",
         backgroundImage: "url(/images/hero-bg.jpg)",
         backgroundSize: "cover"
       }}
@@ -43,7 +44,11 @@ const Hero = () => {
         </span>
       </div>
       <div className="container text-center">
-        <h2>Tally Customization & Software Development<br />for Growing Businesses</h2>
+        <h2  className="text-[55px]!">Tally Customization & Software Development
+          <br />
+          <span>
+            for Growing Businesses
+          </span></h2>
         <p>
           FlowupS Technologies Pvt. Ltd. helps businesses build practical Tally solutions,
           custom software, integrations, dashboards, and support systems that match real
@@ -61,7 +66,7 @@ const Hero = () => {
           </a>
 
           <a href="#features" className="btn-watch-video">
-           Explore Our Solutions
+            Explore Our Solutions
           </a>
         </div>
       </div>

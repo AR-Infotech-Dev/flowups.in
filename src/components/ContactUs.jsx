@@ -52,7 +52,7 @@ function ContactUs() {
                                 <div className="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                                     <i className="bi bi-telephone"></i>
                                     <h3>Call Us</h3>
-                                    <p>+91 96654 78057</p>
+                                    <p>+91 96654 78057 / +91 77569 23602</p>
                                 </div>
                             </div>
 
@@ -60,7 +60,7 @@ function ContactUs() {
                                 <div className="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                                     <i className="bi bi-envelope"></i>
                                     <h3>Email Us</h3>
-                                    <p>info@example.com</p>
+                                    <p>admin@flowups.in</p>
                                 </div>
                             </div>
 
