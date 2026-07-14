@@ -46,7 +46,7 @@ function ServicesShowcase() {
             </p>
           </div>
 
-          <div className="row gy-4">
+          <div className="row gy-4 justify-center!">
             {servicesData.map((service, index) => (
               <div
                 className="col-lg-4 col-md-6"

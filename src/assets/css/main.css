@@ -1042,7 +1042,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about h3 {
+/* .about h3 {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
@@ -1078,6 +1078,76 @@ section,
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
+} */
+
+.about-hero{
+    padding:100px 0;
+}
+
+.about-hero-tag{
+    display:inline-block;
+    padding:7px 18px;
+    margin-bottom:18px;
+
+    background:#eef5ff;
+    color:var(--accent-color);
+
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.8px;
+}
+
+.about-hero-title{
+    font-size:48px;
+    font-weight:700;
+    line-height:1.2;
+
+    margin-bottom:20px;
+}
+
+.about-hero-text{
+    font-size:17px;
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    color:#6c757d;
+}
+
+.about-hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.about-hero-image img{
+    width:100%;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.about-intro-card{
+    background:#fff;
+    padding:50px;
+    border:1px solid #e9ecef;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+.about-intro-card h2{
+    color: var(--heading-color);
+    font-size:25px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.about-intro-card p{
+    font-size:16px;
+    line-height:1.6;
+    color:#6c757d;
+    margin:0;
 }
 
 /*--------------------------------------------------------------
@@ -3256,9 +3326,9 @@ h6 {
 
 .section-title p {
   margin-top: 12px;
-  font-size: clamp(32px, 4vw, 46px);
-  font-weight: 700;
-  line-height: 1.14;
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 100;
+  line-height: 1.1;
   letter-spacing: -0.04em;
   text-transform: none;
 }
@@ -3293,18 +3363,19 @@ h6 {
 }
 
 .hero h2 {
-  font-size: clamp(48px, 6.4vw, 78px);
-  font-weight: 700;
+  font-size: clamp(40px, 6.4vw, 70px);
+  font-weight: 200;
   line-height: 1.02;
   letter-spacing: -0.055em;
   text-transform: none;
+  margin-top: -40px;
 }
 
 .hero p {
   max-width: 710px;
   margin: 24px auto 0;
-  font-size: clamp(18px, 2vw, 22px);
-  font-weight: 400;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 200;
   line-height: 1.6;
 }
 
@@ -3340,6 +3411,8 @@ h6 {
 
 .product-about,
 .home-features,
+.home-whyus,
+.home-whyflowups,
 .services,
 .home-workflow,
 .home-use-cases,
@@ -3633,6 +3706,7 @@ h6 {
 
   .product-about,
   .home-features,
+  .home-whyus,
   .services,
   .home-workflow,
   .home-use-cases,
@@ -3668,6 +3742,7 @@ h6 {
 # Product Screenshot Showcase
 --------------------------------------------------------------*/
 .home-features,
+.home-whyus,
 .home-integrations,
 .services-overview,
 .services-2 {
@@ -3675,6 +3750,7 @@ h6 {
 }
 
 .home-features,
+.home-whyus,
 .home-integrations {
   border-top: 1px solid #edf1f4;
   border-bottom: 1px solid #edf1f4;
@@ -4481,6 +4557,7 @@ h6 {
 .featured-services {
   padding: 96px 0;
   background: #ffffff;
+  justify-content: center;
 }
 
 .featured-services-heading {
@@ -4539,6 +4616,10 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.featured-service-card:last-child {
+  grid-column: 2;
 }
 
 .featured-service-card {
@@ -4688,6 +4769,62 @@ h6 {
   .featured-service-content>p {
     min-height: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Why Businesses Choose FlowupS
+--------------------------------------------------------------*/
+.why-flowups {
+  padding: 50px 0;
+  background: #ffffff;
+  /* justify-content: center; */
+}
+
+.why-flowups-header, .support-header{
+  max-width: 760px;
+}
+
+.why-flowups-badge {
+  display: inline-block;
+  padding: 7px 18px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: #0d6efd;
+  background: #eef5ff;
+  border-radius: 30px;
+}
+
+.why-flowups-header p, .support-header p {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  margin-bottom: 18px;
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: none;
+}
+
+.why-flowups-header a, .support-header a {
+  margin: 0;
+  color: var(--default-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (max-width:768px) {
+
+  .why-flowups-header h2, .support-header h2 {
+    font-size: 34px;
+  }
+
+  .why-flowups-header p, .support-header p {
+    font-size: 16px;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -4883,6 +5020,19 @@ h6 {
   box-shadow: 0 20px 55px rgba(16, 42, 67, 0.07);
 }
 
+.company-product1 {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  align-items: center;
+  gap: 58px;
+  margin-bottom: 30px;
+  padding: 48px;
+  border: 1px solid #dfe8ee;
+  border-radius: 10px;
+  background: #ffffff;
+  
+}
+
 .company-product-copy h3 {
   margin: 9px 0 15px;
   color: var(--heading-color);
@@ -5060,7 +5210,7 @@ h6 {
   padding-right: clamp(20px, 4vw, 58px);
 }
 
-.product-about .home-eyebrow {
+.product-about .home-eyebrow, .why-flowups-header .home-eyebrow, .support-header .home-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -5071,7 +5221,7 @@ h6 {
   background: #f7fbfd;
 }
 
-.product-about .home-eyebrow::before {
+.product-about .home-eyebrow::before, .why-flowups-header .home-eyebrow::before, .support-header .home-eyebrow::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -5083,8 +5233,8 @@ h6 {
 .product-about h2 {
   max-width: 580px;
   margin-bottom: 22px;
-  font-size: clamp(36px, 3.7vw, 50px);
-  line-height: 1.06;
+  font-size: clamp(30px, 3.7vw, 10px);
+  line-height: 1.09;
 }
 
 .product-about-lead {

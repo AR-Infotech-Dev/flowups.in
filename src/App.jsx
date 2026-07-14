@@ -7,9 +7,11 @@ import MainLayout from "./layouts/MainLayout";
 import Home from './pages/Home'
 import About from './pages/About'
 import ContactUs from './pages/ContactUs'
+
 import Service from './pages/Services'
 import ServiceDetails from "./components/ServiceDetails";
 import CustomizationPage from "./components/CustomizationPage";
+import OurTeam from "./components/OurTeam";
 
 function App() {
    useEffect(() => {
@@ -26,8 +28,9 @@ function App() {
           {/* Routes */}
           <Route path="/" element={<MainLayout />} >
             <Route index element={<Home />} />
-            <Route path="about_us" element={<About />} />
             <Route path="services" element={<Service />} />
+            <Route path="about_us" element={<About />} />
+            <Route path="our-team" element={<OurTeam />} />
             <Route path="contact-us" element={<ContactUs />} />
             <Route path="services/customization" element={<Navigate to="/services/tally" replace />} />
             <Route path="services/customization/:id" element={<CustomizationPage />}/>
