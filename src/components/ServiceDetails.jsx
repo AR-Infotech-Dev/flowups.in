@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
@@ -13,10 +13,15 @@ const ServiceDetails = () => {
   const { id } = useParams();
 
   const service = servicesData.find((s) => s.id === id);
-
+  const [activeCat, setActiveCat] = useState('');
   const [showAllModules, setShowAllModules] = useState(false);
 
   if (!service) return <h2 className="text-center mt-5">Service Not Found</h2>;
+  useEffect(() => {
+    if (service?.categories?.[2]?.items?.length) {
+      setActiveCat(service.categories[2].items[0].category);
+    }
+  }, [service]);
 
   return (
     <main className="main">
@@ -339,68 +344,47 @@ const ServiceDetails = () => {
 
 
                   <div className="row g-3 mt-5">
-                    <h2 className="text-center fw-semibold">Taly Customization Categories</h2>
-                    {service.categories?.[2]?.items?.map((group) => (
-                      <div key={group.category} className="mb-5">
-                        <h3 className="fw-bold mb-4">{group.category}</h3>
-
-                        <div className="row g-4">
-                          {group.services.map((item) => (
-                            <div className="col-lg-3 col-md-6 " key={item.slug}>
-                              <Link
-                                to={`/services/customization/${item.slug}`}
-                                className="text-decoration-none"
-                              >
-                                <div className="card border-1px shadow-sm  module-card " style={{
-                                  borderRadius: "5px",
-                                  cursor: "pointer",
-                                  paddingBottom: "15px",
-                                }}>
-                                  <div style={{ alignItems: "center", padding: "7px" }}>
-                                    <i className={`bi ${item.icon || "bi-grid"}`} style={{
-                                      fontSize: "20px", color: "var(--accent-color)"
-                                      , marginLeft: "15px", marginRight: "15px"
-                                    }}></i>
-
-                                    <h6
-                                      style={{
-                                        lineHeight: "1.5",
-                                        paddingLeft: "15px",
-                                        fontWeight: "600",
-                                        minHeight: "45px",
-                                        display: "-webkit-box",
-                                        WebkitLineClamp: 2,
-                                        WebkitBoxOrient: "vertical",
-                                        overflow: "hidden",
-
-                                      }}
-                                    >{item.name}</h6>
-
-                                    {/* <p className="text-muted">
-                                    {item.description}
-                                  </p> */}
-
-
+                    <h2 className="text-center fw-semibold capitalize">tally customization categories</h2>
+                    <div className="row mt-4">
+                      <div className="col-md-4">
+                        {/* {service.categories?.[2]?.items?.map((group) => (
+                          <div key={group.category} className="p-1.5 px-2 w-full hover:bg-amber-100 !items-center !justify-center">
+                            <h3 className="font-medium text-[18px]!">{group.category}</h3>
+                          </div>
+                        ))} */}
+                        {service.categories?.[2]?.items?.map((group) => (
+                          <div
+                            key={group.category}
+                            className={`hover:bg-gray-100 font-medium text-[18px]! py-2.5 px-2 mb-2 rounded-sm cursor-pointer`}
+                            onClick={() => setActiveCat(group.category)}
+                          >
+                            <h6 className="mb-0">{group.category}</h6>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="col-md-8">
+                        {service.categories?.[2]?.items
+                          ?.filter((group) => group.category === activeCat)
+                          .map((group) => (
+                            <div key={group.category}>
+                              <div className="row g-2">
+                                {group.services.map((item) => (
+                                  <div className="col-lg-6 col-md-12" key={item.slug}>
+                                    <Link to={`/services/customization/${item.slug}`} className="text-decoration-none" >
+                                      <div className="card border-1px module-card p-1.5 " style={{ borderRadius: "5px", cursor: "pointer", paddingBottom: "0px", }}>
+                                        <div className="p-1.5 flex flex-col min-h-[20px] h-[60px]">
+                                          <i className={`bi ${item.icon || "bi-grid"}`} style={{ fontSize: "15px", color: "var(--accent-color)", marginLeft: "15px", marginRight: "15px" }}> </i>
+                                          <h6 className="text-gray-600! m-0" style={{ fontSize: "15px", lineHeight: "1.5", paddingLeft: "15px", fontWeight: "600", minHeight: "", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", }} >{item.name}</h6>
+                                        </div>
+                                      </div>
+                                    </Link>
                                   </div>
-                                </div>
-                              </Link>
+                                ))}
+                              </div>
                             </div>
                           ))}
-                        </div>
                       </div>
-                    ))}
-
-
-
-                  </div>
-
-                  <div className="text-right mt-4">
-                    <button
-                      className="btn btn-outline-danger"
-                      onClick={() => setShowAllModules(!showAllModules)}
-                    >
-                      {showAllModules ? "Show Less" : "See All Modules"}
-                    </button>
+                    </div>
                   </div>
                 </>
               )}

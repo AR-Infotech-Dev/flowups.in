@@ -39,7 +39,7 @@ const WhyUs = () => {
                 {/* Title */}
                 <div className="text-center mt-6">
                     <h2 className="text-3xl font-bold relative inline-block">
-                        Why Choose Us
+                        Why Us
                     </h2>
                     <div className="w-16 h-1 bg-blue-600 mx-auto mt-3"></div>
                 </div>

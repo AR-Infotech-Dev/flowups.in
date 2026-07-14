@@ -17,10 +17,13 @@ const Header = () => {
       name: "Home", path: "/"
     },
     {
+      name: "Services", path: "/services"
+    },
+    {
       name: "About Us", path: "/about_us"
     },
     {
-      name: "Services", path: "/services"
+      name: "Our Team", path: "/our-team"
     },
     {
       name: "Contact", path: "/contact-us"
