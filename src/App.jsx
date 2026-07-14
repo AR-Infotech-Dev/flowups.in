@@ -28,10 +28,10 @@ function App() {
           {/* Routes */}
           <Route path="/" element={<MainLayout />} >
             <Route index element={<Home />} />
-            <Route path="about_us" element={<About />} />
             <Route path="services" element={<Service />} />
-            <Route path="contact-us" element={<ContactUs />} />
+            <Route path="about_us" element={<About />} />
             <Route path="our-team" element={<OurTeam />} />
+            <Route path="contact-us" element={<ContactUs />} />
             <Route path="services/customization" element={<Navigate to="/services/tally" replace />} />
             <Route path="services/customization/:id" element={<CustomizationPage />}/>
             <Route path="/services/:id" element={<ServiceDetails />} />

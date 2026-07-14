@@ -519,7 +519,7 @@ function LandingSections() {
       <section className="home-workflow section dark-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>How We Work</h2>
-          <p>Our process is designed to deliver practical solutions aligned with your business workflow,
+          <p>Our process is designed <br />to deliver practical solutions aligned with your business workflow,
             from understanding requirements to development.</p>
         </div>
         <div className="container">
@@ -548,7 +548,7 @@ function LandingSections() {
                 Our team helps clients with practical support so that their solution continues to work smoothly.</a>
           </div>
 
-          <div className="row gy-4 mt-5">
+          <div className="row gy-4 mt-5 justify-center">
             {support.map((support, index) => (
               <div
                 className="col-lg-4 col-md-6"

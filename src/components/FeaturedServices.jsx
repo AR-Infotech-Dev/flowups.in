@@ -5,6 +5,12 @@ function FeaturedServices() {
   return (
     <section id="services" className="featured-services section">
       <div className="container">
+        {/* <div className="container section-title pb-4" data-aos="fade-up">
+          <h2>Featured services</h2>
+          <p>Practical expertise.<br />Built around your goals.</p>
+          
+        </div> */}
+        
         <div className="featured-services-heading" data-aos="fade-up">
           <div>
             <span>Featured services</span>
@@ -27,8 +33,8 @@ function FeaturedServices() {
               data-aos="fade-up"
               data-aos-delay={index * 90}
             >
-              
-              <Link className="featured-service-image" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
+
+              <Link className="featured-service-image no-underline!" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
                 <img
                   src={`/images/${service.img}`}
                   alt=""
@@ -45,7 +51,7 @@ function FeaturedServices() {
                   <i className={`bi ${service.icon}`} aria-hidden="true" />
                   <span>Business solution</span>
                 </div>
-                <h3><Link to={`/services/${service.id}`}>{service.title}</Link></h3>
+                <h3><Link className="no-underline!" to={`/services/${service.id}`}>{service.title}</Link></h3>
                 <p>{service.description}</p>
                 <ul>
                   {service.points.slice(0, 3).map((point) => (

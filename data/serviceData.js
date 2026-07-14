@@ -96,50 +96,50 @@ export const servicesData = [
   //   ],
   // },
 
-  {
-    id: "crm",
-    title: "Custom Software Development Services",
-    subtitle: "We design and develop responsive, high-performance websites and web applications tailored to your business needs.",
-    description:
-      "Custom software solutions to automate and scale your business operations.",
-    image: "/images/services.jpg",
-    points: [
-      "Custom ERP systems",
-      "CRM solutions",
-      "Automation tools",
-    ],
-    img: "services-3.jpg",
-    icon: "bi-people",
-    categories: [
-      {
-        id: "crm-solutions",
-        title: "CRM Solutions",
-        items: [
-          { name: "Sales CRM", slug: "sales-crm" },
-          { name: "Lead Management", slug: "lead-management" },
-          { name: "Customer Support Systems", slug: "support-system" },
-        ],
-      },
-      {
-        id: "erp-systems",
-        title: "ERP Systems",
-        items: [
-          { name: "Inventory Management", slug: "inventory" },
-          { name: "HR Management", slug: "hrm" },
-          { name: "Accounting Systems", slug: "accounting" },
-        ],
-      },
-      {
-        id: "automation",
-        title: "Automation Tools",
-        items: [
-          { name: "Workflow Automation", slug: "workflow" },
-          { name: "Business Process Automation", slug: "bpa" },
-          { name: "Reporting Dashboards", slug: "dashboard" },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "crm",
+  //   title: "Custom Software Development Services",
+  //   subtitle: "We design and develop responsive, high-performance websites and web applications tailored to your business needs.",
+  //   description:
+  //     "Custom software solutions to automate and scale your business operations.",
+  //   image: "/images/services.jpg",
+  //   points: [
+  //     "Custom ERP systems",
+  //     "CRM solutions",
+  //     "Automation tools",
+  //   ],
+  //   img: "services-3.jpg",
+  //   icon: "bi-people",
+  //   categories: [
+  //     {
+  //       id: "crm-solutions",
+  //       title: "CRM Solutions",
+  //       items: [
+  //         { name: "Sales CRM", slug: "sales-crm" },
+  //         { name: "Lead Management", slug: "lead-management" },
+  //         { name: "Customer Support Systems", slug: "support-system" },
+  //       ],
+  //     },
+  //     {
+  //       id: "erp-systems",
+  //       title: "ERP Systems",
+  //       items: [
+  //         { name: "Inventory Management", slug: "inventory" },
+  //         { name: "HR Management", slug: "hrm" },
+  //         { name: "Accounting Systems", slug: "accounting" },
+  //       ],
+  //     },
+  //     {
+  //       id: "automation",
+  //       title: "Automation Tools",
+  //       items: [
+  //         { name: "Workflow Automation", slug: "workflow" },
+  //         { name: "Business Process Automation", slug: "bpa" },
+  //         { name: "Reporting Dashboards", slug: "dashboard" },
+  //       ],
+  //     },
+  //   ],
+  // },
 
   {
     id: "tally",

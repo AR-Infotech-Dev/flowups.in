@@ -110,86 +110,97 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-    <section className="about-hero section">
-      <div className="container">
-        <div className="row align-items-center gy-5">
-
-          {/* Left Content */}
-          <div
-            className="col-lg-7"
-            data-aos="fade-right"
-          >
-            <span className="about-hero-tag">
-              About Us
-            </span>
-
-            <h1 className="about-hero-title">
-              About FlowupS Technologies Pvt. Ltd.
-            </h1>
-
-            <p className="about-hero-text">
-              FlowupS Technologies Pvt. Ltd. is a business technology company focused on Tally customization,
-              integration, and custom software development.
-              We help businesses build systems that match their actual workflow,
-              improve operational control, and reduce manual effort.
-            </p>
-
-            <div className="about-hero-buttons">
-              <a href="#story" className="btn btn-primary">
-                Our Story
-              </a>
-
-              <a href="#expertise" className="btn btn-outline-primary">
-                View Expertise
-              </a>
-            </div>
+      <main className="about">
+        {/* 🔥 Page Title */}
+        <div
+          className="page-title dark-background"
+          data-aos="fade"
+          style={{
+            backgroundImage: "url(/images/page-title-bg.webp)",
+          }}
+        >
+          <div className="container position-relative">
+            <h1>About Us</h1>
+            <p></p>
+            <nav className="breadcrumbs">
+              <ol>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/services">About</Link></li>
+              </ol>
+            </nav>
           </div>
+        </div>
+      </main>
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* Right Image */}
-          <div
-            className="col-lg-5"
-            data-aos="fade-left"
-          >
-            <div className="about-hero-image">
+            {/* Left */}
+            <div data-aos="fade-right">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                About FlowupS Technologies Pvt. Ltd.
+              </h1>
+
+              <p className="mt-6 text-gray-600 leading-8 text-lg text-justify">
+                FlowupS Technologies Pvt. Ltd. is a business technology company focused
+                on Tally customization, integration, and custom software development.
+                We help businesses build systems that match their actual workflow,
+                improve operational control, and reduce manual effort.
+              </p>
+            </div>
+
+            {/* Right */}
+            <div data-aos="fade-left">
               <img
                 src="/images/aboutuss.jpg"
                 alt="FlowupS Technologies"
-                className="img-fluid rounded-4"
+                className="w-full rounded-sm shadow-lg object-cover"
               />
             </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
-
-    {/* Expertise in Customization */ }
-  <section className="about-intro section">
-    <div className="container">
-      <div className="row justify-content-center">
-
-        <div className="col-lg-20">
-          <div
-            className="about-intro-card"
-            data-aos="fade-up"
-          >
-            <h2>Expertise in Customization</h2>
-
-            <p>
-              At FlowupS Technologies, our core expertise lies in Tally
-              customization and bespoke software development. We understand that
-              every business has unique operational requirements, and standard
-              software does not always fit every workflow. Our solutions are
-              designed to align technology with your business processes, making
-              day-to-day operations simpler, more efficient, and easier to manage.
-            </p>
           </div>
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
-  </>
+      {/* Expertise in Customization */}
+      <section className="about-intro section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-20">
+              <div className="about-intro-card rounded-md!" data-aos="fade-up" > <h2>Expertise in Customization</h2>
+                <p>
+                  At FlowupS Technologies, our core expertise lies in Tally
+                  customization and bespoke software development. We understand that
+                  every business has unique operational requirements, and standard
+                  software does not always fit every workflow. Our solutions are
+                  designed to align technology with your business processes, making
+                  day-to-day operations simpler, more efficient, and easier to manage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center mt-2">
+            <div className="col-lg-20">
+              <div className="about-intro-card bg-blue-950! text-white! shadow-sm! rounded-md!" data-aos="fade-up" > 
+                <h2 className="text-white!">Our Vision</h2>
+                <p className="text-gray-200!">
+                  To become a trusted technology partner for businesses that need Tally customization, software development, integration, automation, and long-term support.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center mt-2">
+            <div className="col-lg-20">
+              <div className="about-intro-card rounded-md!" data-aos="fade-up" > <h2>Our Mission</h2>
+                <p>
+                  To deliver practical, reliable, and business-focused technology solutions that simplify operations, improve accuracy, and help companies grow with better control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
