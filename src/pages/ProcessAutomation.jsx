@@ -71,7 +71,7 @@ const ProcessAutomation = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto px-6"data-aos="fade-up" data-aos-delay="100">
                     {focusAreas.map((item, index) => (
-                        <div key={index} className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition" >
+                        <div key={index} className="bg-white p-8 rounded-xl border border-gray-200 shadow-md hover:shadow-xl transition " >
                             <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-900 mb-6">
                                 <span className="material-symbols-outlined">
                                     {item.icon}
@@ -134,13 +134,13 @@ const ProcessAutomation = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 p-6 gap-8" data-aos="fade-up" >
                     {automationFlow.map((item, index) => (
-                        <div key={index} className="bg-gray-50 p-6 rounded-xl border text-center" >
-                            <div className="w-10 h-10 mx-auto mb-4 rounded-full bg-[#001e40] text-white flex items-center justify-center font-bold">
+                        <div key={index} className="bg-gray-50 p-6 rounded-xl border text-center hover:shadow-xl" >
+                            <div className="w-10 h-10 mx-auto mb-4 rounded-lg bg-[#001e40] text-white flex items-center justify-center font-bold">
                                 {index + 1}
                             </div>
-                            <h4 className="font-semibold mb-2">
+                            <h5 className="font-bold text-sm mb-2 font-black">
                                 {item.title}
-                            </h4>
+                            </h5>
                             <p className="text-sm text-gray-600">
                                 {item.description}
                             </p>
@@ -149,7 +149,7 @@ const ProcessAutomation = () => {
                 </div>
             </section>
             {/* CTA */}
-            <section className="py-24 px-6 max-w-[1280px] mx-auto mb-16">
+            <section className="py-24 px-6 max-w-[1200  px] mx-auto mb-16">
                 <div className="bg-gray-100 rounded-3xl p-12 md:p-20 text-center relative overflow-hidden border" data-aos="fade-up">
                     {/* <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full -mr-32 -mt-32">
                     </div> */}
@@ -161,7 +161,7 @@ const ProcessAutomation = () => {
                             Join forward-thinking companies that leverage FlowupS Technologies
                             to scale efficiently without increasing overhead.
                         </p>
-                        <button className=" bg-blue-900 text-white px-10 py-4 rounded-lg font-semibold shadow-xl hover:scale-105 transition " >
+                        <button className="   bg-blue-700 text-white px-10 py-3 font-semibold shadow-xl hover:scale-105 transition " style={{ borderRadius: "5px" }}>
                             Start Project Discovery
                         </button>
                     </div>
