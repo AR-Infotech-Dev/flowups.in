@@ -7,11 +7,14 @@ import MainLayout from "./layouts/MainLayout";
 import Home from './pages/Home'
 import About from './pages/About'
 import ContactUs from './pages/ContactUs'
+import OurTeam from "./components/OurTeam";
+import Product from "./components/Product";
+
 
 import Service from './pages/Services'
 import ServiceDetails from "./components/ServiceDetails";
 import CustomizationPage from "./components/CustomizationPage";
-import OurTeam from "./components/OurTeam";
+
 
 function App() {
    useEffect(() => {
@@ -32,6 +35,7 @@ function App() {
             <Route path="about_us" element={<About />} />
             <Route path="our-team" element={<OurTeam />} />
             <Route path="contact-us" element={<ContactUs />} />
+             <Route path="product" element={<Product />} />
             <Route path="services/customization" element={<Navigate to="/services/tally" replace />} />
             <Route path="services/customization/:id" element={<CustomizationPage />}/>
             <Route path="/services/:id" element={<ServiceDetails />} />
