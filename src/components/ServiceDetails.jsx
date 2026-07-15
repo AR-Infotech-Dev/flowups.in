@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
-
+import ProcessAutomation from "../pages/ProcessAutomation";
 
 
 
@@ -397,6 +397,11 @@ const ServiceDetails = () => {
       {service.id === "crm" && (
         <>
           <SoftwareDevelopment />
+        </>
+      )}
+      {service.id === "business_process_automation" && (
+        <>
+          <ProcessAutomation />
         </>
       )}
 
