@@ -5,7 +5,7 @@ import { ArrowRight, User, ShieldCheck } from "lucide-react";
 function TeamCard({ name = "", image = "", description = "", designation = "" }) {
     return (
         <>
-            <div className="relative z-30 w-full max-w-[50%] rounded-sm border border-gray-200 bg-white px-1.5 py-1 shadow-md hover:shadow-xl transition-all" data-aos="fade-up">
+            <div className=" w-full lg:w-1/2 relative z-30 rounded-sm border border-gray-200 bg-white px-1.5 py-1 shadow-md hover:shadow-xl transition-all" data-aos="fade-up">
                 <div className="flex flex-col md:flex-row items-start gap-3 px-2 py-2 ">
                     {/* Image Container */}
                     <div className=" bg-white ">
@@ -21,7 +21,7 @@ function TeamCard({ name = "", image = "", description = "", designation = "" })
                     <div className="flex-1 px-2">
                         <h3 className="text-xl! font-bold text-gray-900"> {name} </h3>
                         <p className="mt-0 uppercase tracking-[2px] text-[10px] font-semibold text-blue-700"> {designation}</p>
-                        <p className="mt-0 text-gray-600 text-sm leading-5 text-justify">{description}
+                        <p className="mt-0 text-gray-600 text-sm leading-5">{description}
                         </p>
                     </div>
                 </div>
@@ -33,18 +33,18 @@ function TeamCardSM({ name = "", image = "", description = "", designation = "" 
     return (
         <>
             <div className="relative z-30 w-full max-w-full  rounded-sm border border-gray-200 bg-white  shadow-md hover:shadow-2xl transition-all" data-aos="fade-up">
-                <div className="flex flex-col md:flex-row items-start gap-3 px-3 py-3 ">
+                <div className="flex lg:flex-row items-start gap-3 px-3 py-3 ">
                     {/* Image Container */}
-                    <div className=" bg-white ">
-                        <div className="h-20 w-20 flex-shrink-0p-4">
+                    <div className=" bg-white flex-shrink-0 ">
+                        <div className="h-20 w-20 md:h-20 md:w-20 ">
                             <img src={image} alt="Sapana Padmane" className="h-full w-full object-cover " />
                         </div>
                     </div>
                     {/* Content */}
-                    <div className="flex-1 px-1">
+                    <div className="flex-1 px-1 ">
                         <h3 className="text-[16px]! text-sm font-bold text-gray-900 mb-1!"> {name} </h3>
                         <p className="uppercase tracking-[1px] text-[10px] font-semibold text-blue-700 mb-1! "> {designation}</p>
-                        <p className="text-gray-600 leading-3.5 text-[11px]! text-justify m-0!">{description}
+                        <p className="text-gray-600 leading-3.5 text-[11px]! m-0!">{description}
                         </p>
                     </div>
                 </div>
@@ -70,23 +70,36 @@ const DevelopmentTeamCard = ({ name = "", image = "", description = "", designat
 }
 const SalesTeamCard = ({ name = "", image = "", description = "", designation = "" }) => {
     return (
-        <div className="border border-gray-200 bg-white p-3 md:p-4 shadow-sm hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-            <div className="flex items-center gap-3 md:gap-5">
-                <div className="w-17 h-17 rounded-full overflow-hidden ">
-                    <img
-                        src={image}
-                        alt={name}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+       <div
+  className="border border-gray-200 bg-white p-3 md:p-4 shadow-sm hover:shadow-lg transition-all duration-300"
+  data-aos="fade-up"
+>
+  <div className="flex items-center gap-3">
+    {/* Image */}
+    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden shrink-0">
+      <img
+        src={image}
+        alt={name}
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-                <div>
-                    <h3 className="text-[20px]! md:text-xl font-bold text-gray-900"> {name} </h3>
-                    <p className="text-xs md:text-sm text-blue-600 uppercase tracking-wide md:tracking-[2px] mb-1"> {designation} </p>
-                    <p className="text-gray-600 leading-3.5 text-sm! text-justify">{description}</p>
-                </div>
-            </div>
-        </div>
+    {/* Content */}
+    <div className="flex-1 min-w-0">
+      <h3 className="text-base md:text-lg font-semibold text-gray-900 leading-tight truncate">
+        {name}
+      </h3>
+
+      <p className="mt-1 text-[10px] md:text-[11px] uppercase tracking-[2px] text-blue-600 font-semibold leading-tight">
+        {designation}
+      </p>
+
+      <div className="mt-1 text-xs md:text-sm text-gray-600 leading-5 line-clamp-3">
+        {description}
+      </div>
+    </div>
+  </div>
+</div>
     );
 }
 
@@ -120,7 +133,7 @@ function OurTeam() {
                                 <div className="w-14 h-0.5 bg-blue-200"></div>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"> Leadership & Team </h2>
-                            <p className="mt-6 text-gray-600 leading-6 text-lg text-justify">
+                            <p className="mt-6 text-gray-600 leading-6 text-lg ">
                                 FlowupS Technologies Pvt. Ltd. is powered by directors,
                                 developers, sales professionals, support specialists,
                                 and technical advisors.
@@ -131,11 +144,17 @@ function OurTeam() {
                             </p>
                         </div>
                         {/* Right Side */}
-                        <div className="relative flex gap-5">
+                        <div className="relative flex flex-col lg:flex-row gap-6 w-full items-center justify-center ">
+                        {/* <div className="relative flex lg:flex-col gap-5"> */}
                             {/* Card */}
                             <TeamCard
                                 name="Ranjit Ambare"
-                                designation=" Director - Tally Customization & Integration "
+                                designation={
+                                    <p>
+                                        Director - Tally Customization & Integration
+                                    </p>
+                                }
+
                                 description={<>
                                     <p>
                                         Ranjit brings over 12 years of industry experience in Tally
@@ -149,6 +168,11 @@ function OurTeam() {
                             />
                             <TeamCard
                                 name="Anjan Ambre"
+                                designation={
+                                    <p>
+                                        Director – Sales, Requirements & Finance
+                                    </p>
+                                }
                                 description={<>
                                     <p className="">Anjan leads sales, client communication, requirement
                                         gathering, finance, and client-side support at
@@ -160,7 +184,6 @@ function OurTeam() {
                                         coordination.</p>
                                 </>}
                                 image="https://lh3.googleusercontent.com/aida-public/AB6AXuCB6O7y_6WlEdisEmeoxZhTCknaVSUcS9GjScSmXhTH0mT-ELgtaJs8vqx-ae0LJTQNpfpvUm3TzrkvZfFivMUG--u7C765pD3e-FAR63Qnsv7WqvRY26QM3i-iIC8p3cjN_2SRfhQs_Sp9fNUYdhFp_PNg3fnA_V6adt7F2PlqYogTnm_9ePLoUT2ES7TpkPk_vg_AG69ijCxHX0WmmuCM5lS7VptPmYMTlhOyR_8CL4dKH0R52MgDLJ-vZz7nbaAHN23NmPyEmkSY"
-                                designation="Director – Sales, Requirements & Finance"
                             />
                         </div>
                     </div>
