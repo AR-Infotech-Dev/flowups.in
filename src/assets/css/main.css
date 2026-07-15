@@ -71,6 +71,11 @@
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -4747,7 +4752,7 @@ h6 {
 
 @media (max-width: 991px) {
   .featured-services-heading {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     gap: 24px;
   }
 

@@ -8,7 +8,7 @@ function FeaturedServices() {
         <div className="container section-title pb-4 pl-0!" data-aos="fade-up">
           <h2>Featured services</h2>
         </div>
-        
+
         <div className="featured-services-heading" data-aos="fade-up">
           <div>
             <h2>Practical expertise.<br />Built around your goals.</h2>
@@ -30,7 +30,6 @@ function FeaturedServices() {
               data-aos="fade-up"
               data-aos-delay={index * 90}
             >
-
               <Link className="featured-service-image no-underline!" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
                 <img
                   src={`/images/${service.img}`}
@@ -42,12 +41,7 @@ function FeaturedServices() {
                 />
                 <span>0{index + 1}</span>
               </Link>
-
               <div className="featured-service-content">
-                {/* <div className="featured-service-meta">
-                  <i className={`bi ${service.icon}`} aria-hidden="true" />
-                  <span>Business solution</span>
-                </div> */}
                 <h3><Link className="no-underline!" to={`/services/${service.id}`}>{service.title}</Link></h3>
                 <p>{service.description}</p>
                 <ul>

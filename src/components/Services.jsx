@@ -1,6 +1,7 @@
 import React from 'react'
 import { servicesData } from "../../data/serviceData";
 import { Link } from "react-router-dom";
+import FeaturedServices from './FeaturedServices';
 const ServiceItem = ({ service }) => {
 
   return (
@@ -16,7 +17,7 @@ const ServiceItem = ({ service }) => {
           <Link
             to={`/services/${service.id}`}
             className="stretched-link no-underline"
-          > 
+          >
             <h3>{service.title}</h3>
           </Link>
           <p>{service.description}</p>
@@ -85,7 +86,7 @@ function Services() {
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-
+        <FeaturedServices />
         <div className="row gy-5">
           {servicesData.map((service, index) => (
             <ServiceItem key={index} service={service} />
