@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 import MainLayout from "./layouts/MainLayout";
 import Home from './pages/Home'
@@ -16,6 +16,16 @@ import ServiceDetails from "./components/ServiceDetails";
 import CustomizationPage from "./components/CustomizationPage";
 
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
    useEffect(() => {
     AOS.init({
@@ -27,6 +37,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes >
           {/* Routes */}
           <Route path="/" element={<MainLayout />} >

@@ -3,6 +3,19 @@ import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
+import Support from "../pages/Support";
+
+const categoryIcons = {
+  "Industry-Specific Business Modules": "bi-buildings",
+  "Billing, Invoice & POS Customization": "bi-receipt-cutoff",
+  "Inventory, Stock & Manufacturing": "bi-box-seam",
+  "Reports, MIS & Business Analysis": "bi-bar-chart-line",
+  "Security, Controls & Approval Workflow": "bi-shield-check",
+  "GST, Tax & Compliance": "bi-file-earmark-check",
+  "Import, Export, Email & Document Automation": "bi-arrow-left-right",
+  "Payment, Receipt & Outstanding Management": "bi-wallet2",
+  "Workflow, Task & Utility Modules": "bi-diagram-3",
+};
 
 
 
@@ -47,7 +60,7 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-
+{/* ------------------------------------------------------------------- */}
 
       {service.id === "tally" &&
         <section id="service-details" className="service-details section ">
@@ -328,13 +341,9 @@ const ServiceDetails = () => {
                         }}
                       >
                         <h4>API Integration</h4>
-
                         <p>
                           Connect websites, CRM and apps with Tally.
                           Track every edit, delete and modification.
-                          Track every edit, delete and modification.
-                          Track every edit, delete and modification.
-
                         </p>
                       </div>
 
@@ -342,48 +351,72 @@ const ServiceDetails = () => {
 
                   </div>
 
+                  <div className="mt-5 p-3  sm:p-5" >
+                    <div className="mb-5 text-center">
+                      <span className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em]" style={{ color: "var(--accent-color)", backgroundColor: "color-mix(in srgb, var(--accent-color), transparent 90%)" }}>
+                        <i className="bi bi-grid-1x2-fill" /> Custom Tally Solutions
+                      </span>
+                      <h2 className="mb-1 mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">Tally customization categories</h2>
+                      <p className="mb-0 text-sm text-slate-500">Choose a category to explore the modules built for your business.</p>
+                    </div>
 
-                  <div className="row g-3 mt-5">
-                    <h2 className="text-center fw-semibold capitalize">tally customization categories</h2>
-                    <div className="row mt-4">
-                      <div className="col-md-4">
-                        {/* {service.categories?.[2]?.items?.map((group) => (
-                          <div key={group.category} className="p-1.5 px-2 w-full hover:bg-amber-100 !items-center !justify-center">
-                            <h3 className="font-medium text-[18px]!">{group.category}</h3>
-                          </div>
-                        ))} */}
-                        {service.categories?.[2]?.items?.map((group) => (
+                    <div className="mx-auto max-w-6xl space-y-3">
+                      {service.categories?.[2]?.items?.map((group) => {
+                        const isOpen = activeCat === group.category;
+                        const categoryIcon = categoryIcons[group.category] || "bi-grid-1x2-fill";
+
+                        return (
                           <div
                             key={group.category}
-                            className={`hover:bg-gray-100 font-medium text-[18px]! py-2.5 px-2 mb-2 rounded-sm cursor-pointer`}
-                            onClick={() => setActiveCat(group.category)}
+                            className="overflow-hidden rounded-sm border bg-white shadow-[0_6px_20px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(7,61,112,0.12)]"
+                            style={{
+                              borderColor: isOpen ? "var(--accent-color)" : "#e2e8f0",
+                              overflowAnchor: "none",
+                            }}
                           >
-                            <h6 className="mb-0">{group.category}</h6>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="col-md-8">
-                        {service.categories?.[2]?.items
-                          ?.filter((group) => group.category === activeCat)
-                          .map((group) => (
-                            <div key={group.category}>
-                              <div className="row g-2">
-                                {group.services.map((item) => (
-                                  <div className="col-lg-6 col-md-12" key={item.slug}>
-                                    <Link to={`/services/customization/${item.slug}`} className="text-decoration-none" >
-                                      <div className="card border-1px module-card p-1.5 " style={{ borderRadius: "5px", cursor: "pointer", paddingBottom: "0px", }}>
-                                        <div className="p-1.5 flex flex-col min-h-[20px] h-[60px]">
-                                          <i className={`bi ${item.icon || "bi-grid"}`} style={{ fontSize: "15px", color: "var(--accent-color)", marginLeft: "15px", marginRight: "15px" }}> </i>
-                                          <h6 className="text-gray-600! m-0" style={{ fontSize: "15px", lineHeight: "1.5", paddingLeft: "15px", fontWeight: "600", minHeight: "", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", }} >{item.name}</h6>
-                                        </div>
-                                      </div>
+                            <button
+                              type="button"
+                              className="flex w-full items-center justify-between gap-3 px-4 py-3.5 text-left transition-colors hover:bg-slate-50 sm:px-5"
+                              onClick={() => setActiveCat(isOpen ? "" : group.category)}
+                              aria-expanded={isOpen}
+                              style={{ backgroundColor: isOpen ? "color-mix(in srgb, var(--accent-color), transparent 93%)" : "" }}
+                            >
+                              <span className="flex min-w-0 items-center gap-3 text-sm font-semibold text-slate-800 sm:text-base">
+                                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white shadow-sm" style={{ background: "linear-gradient(135deg, var(--brand-primary-dark), var(--accent-color))" }}>
+                                  <i className={`bi ${categoryIcon}`} />
+                                </span>
+                                <span className="truncate">{group.category}</span>
+                              </span>
+                              <span className="flex shrink-0 items-center gap-2">
+                                <span className="hidden rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-500 sm:inline">{group.services.length} modules</span>
+                                <i className={`bi bi-chevron-down text-base transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} style={{ color: "var(--accent-color)" }} />
+                              </span>
+                            </button>
+
+                            <div className={`grid transition-[grid-template-rows,opacity] duration-500 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                              <div className="overflow-hidden">
+                                <div className="grid grid-cols-1 gap-2.5 border-t border-slate-100 bg-slate-50/80 p-3 sm:grid-cols-2 sm:p-4 lg:grid-cols-3">
+                                  {group.services.map((item) => (
+                                    <Link
+                                      key={item.slug}
+                                      to={`/services/customization/${item.slug}`}
+                                      className="group flex min-h-[65px] items-center gap-3 rounded-sm border border-slate-200 bg-white px-3.5 py-2 text-decoration-none shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_10px_20px_rgba(7,61,112,0.12)]"
+                                    >
+                                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md" style={{ color: "var(--accent-color)", backgroundColor: "color-mix(in srgb, var(--accent-color), transparent 91%)" }}>
+                                        <i className={`bi ${item.icon || "bi-grid"} text-base`} />
+                                      </span>
+                                      <span className="flex min-w-0 flex-1 items-center justify-between gap-2">
+                                        <span className="line-clamp-2 text-sm font-semibold leading-5 text-slate-700 transition-colors duration-200 group-hover:text-sky-700">{item.name}</span>
+                                        <i className="bi bi-arrow-up-right shrink-0 text-sm text-slate-400 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                                      </span>
                                     </Link>
-                                  </div>
-                                ))}
+                                  ))}
+                                </div>
                               </div>
                             </div>
-                          ))}
-                      </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </>
@@ -397,6 +430,11 @@ const ServiceDetails = () => {
       {service.id === "crm" && (
         <>
           <SoftwareDevelopment />
+        </>
+      )}
+      {service.id === "support_implementation" && (
+        <>
+          <Support/>
         </>
       )}
 
