@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
+import ProcessAutomation from "../pages/ProcessAutomation";
 
 const categoryIcons = {
   "Industry-Specific Business Modules": "bi-buildings",
@@ -429,6 +430,11 @@ const ServiceDetails = () => {
       {service.id === "crm" && (
         <>
           <SoftwareDevelopment />
+        </>
+      )}
+      {service.id === "business_process_automation" && (
+        <>
+          <ProcessAutomation />
         </>
       )}
 
