@@ -212,7 +212,7 @@ export const servicesData = [
               },
               {
                 name: "Wholesale Garment",
-                slug: "wholesale-garment",
+                slug: "wholesale_garment",
                 icon: "bi-bag"
               },
               {
@@ -539,7 +539,7 @@ export const customization_data = [
         title: "Easy Promotion/Migration",
 
         image:
-          "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+          "https://media.istockphoto.com/id/2148327938/photo/woman-uses-laptop-successful-curly-haired-hispanic-or-brazilian-woman-in-stylish-elegant.jpg?s=612x612&w=0&k=20&c=HkpeVdjSo1_aR__FVcwalFkHWy_rRbi74iYezNS0VAo=",
 
         description:
           "This feature helps in promoting students to the next class or migrating them to another course. It reduces manual work and avoids errors in academic records",
@@ -549,7 +549,7 @@ export const customization_data = [
         title: "ID card, Bonafide, LC printing",
 
         image:
-          "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+          "https://media.istockphoto.com/id/2208930120/vector/id-vector-icon-which-can-easily-modify-or-edit.jpg?s=612x612&w=0&k=20&c=sYgMdBITVC8E8kjPs4uAJCAYyjx-JbNFicktg9W0_zU=",
 
         description:
           "It helps in quickly generating ID cards, Bonafide certificates, and leaving certificates. This saves time and ensures professional, standardized documents.",
@@ -559,7 +559,7 @@ export const customization_data = [
         title: "Payroll module for staff",
 
         image:
-          "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+          "https://media.istockphoto.com/id/1356911722/vector/payroll-income-concept-salary-payment-annual-bonus-payout-with-paper-calculator-and-people.jpg?s=612x612&w=0&k=20&c=pg9rRwfrsBTO0xCdntzYkr_Sy9uXbfl9yKuZcUwNi_E=Taly Customization Categories",
 
         description:
           "This handles staff salary, attendance, and deductions. It makes salary processing accurate,faster, and less stressful for the management.",
@@ -591,19 +591,19 @@ export const customization_data = [
       },
       {
         title: "Print on 1 Page–MRP Wise and Size Wise:",
-        image: "/images/services.jpg",
+        image: "https://media.istockphoto.com/id/1294447918/photo/wood-alphabet-letter-in-word-mrp-on-green-grass-background.jpg?s=612x612&w=0&k=20&c=v8LywJXXYPDr4bym1Ygimjc3xULzyt2PnEJITz8JD2I=",
         description: "You can print your item list on one page showing MRP and Size.",
         description1: "This saves paper and gives a clear overview of prices and available sizes."
       },
       {
         title: "Track Items by MRP, Size, Color, Type:",
-        image: "/images/services.jpg",
+        image: "https://media.istockphoto.com/id/2177518475/video/many-different-shapes-created-on-a-3d-printer-3d-technology.jpg?s=640x640&k=20&c=F2uUy99fnH8F7iaKHSjrILwncObCyMrjI8H4DbChgIc=",
         description: "Easily find and manage garments based on their price, size, color, or type.",
         description1: "Helps in quick billing and stock verification."
       },
       {
         title: ".Category-Wise Report",
-        image: "/images/services.jpg",
+        image: "https://media.istockphoto.com/id/2241545451/vector/security-report-concept-in-orange-color.jpg?s=612x612&w=0&k=20&c=r36VzvLEky3pGp0sxHzAlL__8anL-61nPGoYlaRHct8=",
         description: "Get reports according to categories like Men’s Wear, Women’s Wear, Kids Wear,etc.",
         description1: "Helps in analyzing which category is selling more."
       },
@@ -611,7 +611,7 @@ export const customization_data = [
 
       {
         title: "Advanced QR Code for Sales:",
-        image: "/images/services-1.jpg",
+        image: "https://media.istockphoto.com/id/1487255881/photo/let-me-scan-to-register-first.jpg?s=612x612&w=0&k=20&c=n5QeNiDPdpEsmJmvqF-lQsddYQA22tQFXWa4w8BD6pE=",
         description: "Each item can have a QR Code for faster billing and scanning.",
         description1: "Improves speed and accuracy in sales entry."
       }
@@ -642,7 +642,7 @@ export const customization_data = [
       },
       {
         title: "Finance Management at Sales",
-        image: "/images/services.jpg",
+        image: "https://media.istockphoto.com/id/881542122/photo/business-people-using-pen-tablet-notebook-are-planning-a-marketing-plan-to-improve-the-quality.jpg?s=612x612&w=0&k=20&c=zSo6zX4zgsOYBQpw_7Xcz3nX_sXqwHr0mSzEGkUREUg=",
         description: "Track and manage sales made on EMI or loan, with proper reports.",
       },
       {
@@ -652,7 +652,7 @@ export const customization_data = [
       },
       {
         title: "Sales Through Barcode Scanning",
-        image: "/images/services.jpg",
+        image: "https://media.istockphoto.com/id/1408900354/photo/happy-online-store-owner-smiling-at-the-camera.jpg?s=612x612&w=0&k=20&c=WHpAFqMhuQXHRlrm9OX1w4JTHUdxEUAuKm0jlZA0EHM=",
         description: "Quickly bill products by scanning barcodes at the counter.",
       },
       {
@@ -1472,7 +1472,7 @@ export const customization_data = [
   {
     id: "apmc_ada",
     title: "APMC ADA",
-    banner: "https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg",
+    banner: "https://media.istockphoto.com/id/1410323459/photo/portrait-of-a-businessman-working-on-a-tablet-computer-in-a-modern-office-make-an-account.jpg?s=612x612&w=0&k=20&c=w1Ueuo3x8oeyq2yXdTVpjF8F1fZmGsYtemJfhrGJPGY=",
     features: [
 
       {
