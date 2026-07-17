@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
+import Support from "../pages/Support";
 import ProcessAutomation from "../pages/ProcessAutomation";
 
 const categoryIcons = {
@@ -60,7 +61,7 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-
+{/* ------------------------------------------------------------------- */}
 
       {service.id === "tally" &&
         <section id="service-details" className="service-details section ">
@@ -431,6 +432,10 @@ const ServiceDetails = () => {
         <>
           <SoftwareDevelopment />
         </>
+      )}
+      {service.id === "support_implementation" && (
+        <>
+          <Support/>
       )}
       {service.id === "business_process_automation" && (
         <>

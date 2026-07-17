@@ -1085,6 +1085,10 @@ section,
   top: calc(50% - 47px);
 } */
 
+/* ======================================================
+   ABOUT HERO SECTION
+====================================================== */
+
 .about-hero{
     padding:100px 0;
 }
@@ -1106,6 +1110,7 @@ section,
 }
 
 .about-hero-title{
+    color: var(--heading-color);
     font-size:48px;
     font-weight:700;
     line-height:1.2;
@@ -1115,7 +1120,7 @@ section,
 
 .about-hero-text{
     font-size:17px;
-    line-height:1.8;
+    line-height:1.5;
 
     margin-bottom:30px;
 
@@ -1123,6 +1128,7 @@ section,
 }
 
 .about-hero-buttons{
+    /* color: var(--brand-primary-dark); */
     display:flex;
     gap:20px;
 }
@@ -1133,9 +1139,14 @@ section,
     object-fit:cover;
 }
 
+
+/* ======================================================
+   EXPERTISE IN CUSTOMIZATION SECTION
+====================================================== */
+
 .about-intro-card{
     background:#fff;
-    padding:50px;
+    padding:35px;
     border:1px solid #e9ecef;
     border-radius:20px;
     box-shadow:0 8px 30px rgba(0,0,0,.05);
@@ -1151,8 +1162,167 @@ section,
 .about-intro-card p{
     font-size:16px;
     line-height:1.6;
-    color:#6c757d;
+    /* color:#6c757d; */
+    color: var(--default-color);
     margin:0;
+}
+
+
+/* ======================================================
+   OUR ORIGIN SECTION
+====================================================== */
+
+.about-origin-card{
+    height: 100%;
+    background: var(--heading-color);
+    color: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.about-origin-icon{
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.about-origin-card h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+.about-origin-card p{
+    color: rgba(255,255,255,.9);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+/* ======================================================
+   OUR VISION SECTION / OUR MISSION SECTION
+====================================================== */
+
+.about-vision-card, .about-mission-card{
+    height: 100%;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.about-vision-icon, .about-mission-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13,110,253,.1);
+    border-radius: 16px;
+    color: var(--accent-color);
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.about-vision-card h3, .about-mission-card h3{
+    color: var(--heading-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.about-vision-card p, .about-mission-card p{
+    margin: 0;
+    /* color: #6c757d; */
+    color: var(--default-color);
+    line-height: 1.5;
+}
+
+/* ======================================================
+   CORE VALUES SECTION
+====================================================== */
+
+.about-values{
+    padding:100px 0;
+}
+
+.about-values-header{
+    max-width:750px;
+    margin:0 auto 70px;
+}
+
+.about-values-header h2{
+    font-size:48px;
+    font-weight:700;
+    color:var(--heading-color);
+    margin-bottom:20px;
+}
+
+.about-values-header p{
+    font-size:18px;
+    line-height:1.8;
+    color:var(--default-color);
+    opacity:.8;
+    margin-bottom:0;
+}
+
+
+/* ======================================================
+   CORE VALUE CARDS
+====================================================== */
+
+.about-value-card{
+    background:#fff;
+    border:1px solid #e9ecef;
+    border-radius:20px;
+    padding:35px;
+    height:100%;
+    transition:all .3s ease;
+}
+
+.about-value-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.about-value-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:14px;
+    background:#f5f7fa;
+    color:var(--accent-color);
+    font-size:20px;
+    margin-bottom:24px;
+    transition:all .3s ease;
+}
+
+.about-value-card:hover .about-value-icon{
+    background:var(--accent-color);
+    color:#fff;
+}
+
+.about-value-card h4{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:15px;
+    color:var(--heading-color);
+}
+
+.about-value-card p{
+    margin:0;
+    color:var(--default-color);
+    line-height:1.8;
 }
 
 /*--------------------------------------------------------------
@@ -1815,6 +1985,227 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Support Hero
+--------------------------------------------------------------*/
+
+.support-hero{
+    position: relative;
+    padding: 90px 0;
+    overflow: hidden;
+    background: #f8f9fc;
+}
+
+.support-hero-tag{
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+
+    background: var(--brand-cyan-soft);
+    color: var(--heading-color);
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+
+.support-hero-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--heading-color);
+    margin-bottom: 25px;
+}
+
+.support-hero-text{
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--brand-primary-dark);
+    margin-bottom: 35px;
+    max-width: 850px;
+}
+
+.support-hero-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/*--------------------------------------------------------------
+# Support Areas
+--------------------------------------------------------------*/
+
+.support-areas{
+    padding:100px 0;
+    background:#fff;
+}
+
+.support-areas-header{
+    max-width:750px;
+    margin:0 auto 70px;
+}
+
+.support-areas-header h2{
+    font-size:30px;
+    font-weight:600;
+    color:var(--heading-color);
+    margin-bottom:18px;
+}
+
+.support-areas-header p{
+    font-size:18px;
+    line-height:1.8;
+    color: var(--brand-primary-dark);;
+    margin-bottom:0;
+}
+
+/*--------------------------------------------------------------
+# Support Card
+--------------------------------------------------------------*/
+
+/* .support-card{
+    background:#fff;
+    padding:30px;
+    border:1px solid #e9ecef;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.support-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.support-card-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+
+    background:#eef5ff;
+    color:var( --brand-primary);
+
+    border-radius:14px;
+    font-size:20px;
+    border:1px solid var(--brand-primary);
+}
+
+.support-card h3{
+    font-size:22px;
+    font-weight:600;
+    color:var(--heading-color);
+    margin-bottom:12px;
+}
+
+.support-card p{
+    margin:0;
+    color:#6c757d;
+    line-height:1.7;
+} */
+
+/*--------------------------------------------------------------
+# Why Choose Support
+--------------------------------------------------------------*/
+
+.support-why{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+.support-why-title{
+    font-size:46px;
+    font-weight:700;
+    line-height:1.2;
+    color:var(--heading-color);
+    margin-bottom:25px;
+}
+
+.support-why-text{
+    font-size:18px;
+    color:#6c757d;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.support-why-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.support-why-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.support-why-icon{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--accent-color);
+    color:#fff;
+    border-radius:30%;
+    flex-shrink:0;
+}
+
+.support-why-item h4{
+    font-size:18px;
+    font-weight:600;
+    color:var(--heading-color);
+    margin-bottom:8px;
+}
+
+.support-why-item p{
+    margin:0;
+    color:#6c757d;
+    line-height:1.7;
+}
+
+.support-why-image{
+    position:relative;
+}
+
+.support-why-image img{
+    width:100%;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.support-availability{
+    position:absolute;
+    right:-40px;
+    bottom:-40px;
+
+    background:var(--heading-color);
+    color:#fff;
+
+    padding:24px;
+    border-radius:10px;
+
+    text-align:center;
+}
+
+.support-availability h3{
+    margin:0;
+    font-size:35px;
+    font-weight:700;
+    color:#fff;
+}
+
+.support-availability span{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.8px;
 }
 
 /*--------------------------------------------------------------
