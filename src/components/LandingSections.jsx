@@ -442,7 +442,7 @@ function LandingSections() {
               <span className="home-eyebrow">Product 01</span>
               <h3>CallDesk</h3>
               <p>A focused workspace for calls, customer context, follow-ups, tickets, and team performance.</p>
-              <Link to="/contact-us" className="home-primary-link">Explore CallDesk <i className="bi bi-arrow-right" /></Link>
+              <Link to="/Product" className="home-primary-link">Explore CallDesk <i className="bi bi-arrow-right" /></Link>
             </div>
             <ProductScreenshotShowcase />
           </article>
