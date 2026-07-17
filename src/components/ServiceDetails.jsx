@@ -4,6 +4,7 @@ import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
 import Support from "../pages/Support";
+import ProcessAutomation from "../pages/ProcessAutomation";
 
 const categoryIcons = {
   "Industry-Specific Business Modules": "bi-buildings",
@@ -435,6 +436,10 @@ const ServiceDetails = () => {
       {service.id === "support_implementation" && (
         <>
           <Support/>
+      )}
+      {service.id === "business_process_automation" && (
+        <>
+          <ProcessAutomation />
         </>
       )}
 
