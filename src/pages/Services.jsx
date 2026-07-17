@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesShowcase from '../components/ServicesShowcase'
 import { Link } from 'react-router-dom'
+import FeaturedServices from '../components/FeaturedServices'
 
 
 function Services() {

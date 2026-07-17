@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { customization_data } from "../../data/serviceData";
-
+import { useEffect } from "react";
 const CustomizationPage = () => {
   const { id } = useParams();
   const service = customization_data.find((item) => item.id === id);
@@ -9,6 +9,9 @@ const CustomizationPage = () => {
     if (event.currentTarget.src.endsWith(fallback)) return;
     event.currentTarget.src = fallback;
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [id]);
 
   if (!service) {
     return (

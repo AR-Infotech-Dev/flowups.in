@@ -5,9 +5,12 @@ function FeaturedServices() {
   return (
     <section id="services" className="featured-services section">
       <div className="container">
+        <div className="container section-title pb-4 pl-0!" data-aos="fade-up">
+          <h2>Featured services</h2>
+        </div>
+
         <div className="featured-services-heading" data-aos="fade-up">
           <div>
-            <span>Featured services</span>
             <h2>Practical expertise.<br />Built around your goals.</h2>
           </div>
           <div>
@@ -27,8 +30,7 @@ function FeaturedServices() {
               data-aos="fade-up"
               data-aos-delay={index * 90}
             >
-              
-              <Link className="featured-service-image" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
+              <Link className="featured-service-image no-underline!" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
                 <img
                   src={`/images/${service.img}`}
                   alt=""
@@ -39,20 +41,15 @@ function FeaturedServices() {
                 />
                 <span>0{index + 1}</span>
               </Link>
-
               <div className="featured-service-content">
-                <div className="featured-service-meta">
-                  <i className={`bi ${service.icon}`} aria-hidden="true" />
-                  <span>Business solution</span>
-                </div>
-                <h3><Link to={`/services/${service.id}`}>{service.title}</Link></h3>
+                <h3><Link className="no-underline!" to={`/services/${service.id}`}>{service.title}</Link></h3>
                 <p>{service.description}</p>
                 <ul>
                   {service.points.slice(0, 3).map((point) => (
                     <li key={point}><i className="bi bi-check2" />{point}</li>
                   ))}
                 </ul>
-                <Link className="featured-service-link" to={`/services/${service.id}`}>
+                <Link className="featured-service-link no-underline!" to={`/services/${service.id}`}>
                   Explore service <i className="bi bi-arrow-up-right" />
                 </Link>
               </div>

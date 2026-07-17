@@ -1,9 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { CloudCheck } from "lucide-react";
 import { servicesData } from "../../data/serviceData";
 import SoftwareDevelopment from "../pages/SoftwareDevelopement";
 import Support from "../pages/Support";
+import ProcessAutomation from "../pages/ProcessAutomation";
+
+const categoryIcons = {
+  "Industry-Specific Business Modules": "bi-buildings",
+  "Billing, Invoice & POS Customization": "bi-receipt-cutoff",
+  "Inventory, Stock & Manufacturing": "bi-box-seam",
+  "Reports, MIS & Business Analysis": "bi-bar-chart-line",
+  "Security, Controls & Approval Workflow": "bi-shield-check",
+  "GST, Tax & Compliance": "bi-file-earmark-check",
+  "Import, Export, Email & Document Automation": "bi-arrow-left-right",
+  "Payment, Receipt & Outstanding Management": "bi-wallet2",
+  "Workflow, Task & Utility Modules": "bi-diagram-3",
+};
 
 
 
@@ -14,10 +27,15 @@ const ServiceDetails = () => {
   const { id } = useParams();
 
   const service = servicesData.find((s) => s.id === id);
-
+  const [activeCat, setActiveCat] = useState('');
   const [showAllModules, setShowAllModules] = useState(false);
 
   if (!service) return <h2 className="text-center mt-5">Service Not Found</h2>;
+  useEffect(() => {
+    if (service?.categories?.[2]?.items?.length) {
+      setActiveCat(service.categories[2].items[0].category);
+    }
+  }, [service]);
 
   return (
     <main className="main">
@@ -324,13 +342,9 @@ const ServiceDetails = () => {
                         }}
                       >
                         <h4>API Integration</h4>
-
                         <p>
                           Connect websites, CRM and apps with Tally.
                           Track every edit, delete and modification.
-                          Track every edit, delete and modification.
-                          Track every edit, delete and modification.
-
                         </p>
                       </div>
 
@@ -338,70 +352,73 @@ const ServiceDetails = () => {
 
                   </div>
 
+                  <div className="mt-5 p-3  sm:p-5" >
+                    <div className="mb-5 text-center">
+                      <span className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em]" style={{ color: "var(--accent-color)", backgroundColor: "color-mix(in srgb, var(--accent-color), transparent 90%)" }}>
+                        <i className="bi bi-grid-1x2-fill" /> Custom Tally Solutions
+                      </span>
+                      <h2 className="mb-1 mt-3 text-2xl font-bold text-slate-900 sm:text-3xl">Tally customization categories</h2>
+                      <p className="mb-0 text-sm text-slate-500">Choose a category to explore the modules built for your business.</p>
+                    </div>
 
-                  <div className="row g-3 mt-5">
-                    <h2 className="text-center fw-semibold">TALLY CUSTOMIZATION CATEGORIES</h2>
-                    {service.categories?.[2]?.items?.map((group) => (
-                      <div key={group.category} className="mb-5">
-                        <h3 className="fw-bold mb-4">{group.category}</h3>
+                    <div className="mx-auto max-w-6xl space-y-3">
+                      {service.categories?.[2]?.items?.map((group) => {
+                        const isOpen = activeCat === group.category;
+                        const categoryIcon = categoryIcons[group.category] || "bi-grid-1x2-fill";
 
-                        <div className="row g-4">
-                          {group.services.map((item) => (
-                            <div className="col-lg-3 col-md-6 " key={item.slug}>
-                              <Link
-                                to={`/services/customization/${item.slug}`}
-                                className="text-decoration-none"
-                              >
-                                <div className="card border-1px shadow-sm  module-card " style={{
-                                  borderRadius: "5px",
-                                  cursor: "pointer",
-                                  paddingBottom: "15px",
-                                }}>
-                                  <div style={{ alignItems: "center", padding: "7px" }}>
-                                    <i className={`bi ${item.icon || "bi-grid"}`} style={{
-                                      fontSize: "20px", color: "var(--accent-color)"
-                                      , marginLeft: "15px", marginRight: "15px"
-                                    }}></i>
+                        return (
+                          <div
+                            key={group.category}
+                            className="overflow-hidden rounded-sm border bg-white shadow-[0_6px_20px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(7,61,112,0.12)]"
+                            style={{
+                              borderColor: isOpen ? "var(--accent-color)" : "#e2e8f0",
+                              overflowAnchor: "none",
+                            }}
+                          >
+                            <button
+                              type="button"
+                              className="flex w-full items-center justify-between gap-3 px-4 py-3.5 text-left transition-colors hover:bg-slate-50 sm:px-5"
+                              onClick={() => setActiveCat(isOpen ? "" : group.category)}
+                              aria-expanded={isOpen}
+                              style={{ backgroundColor: isOpen ? "color-mix(in srgb, var(--accent-color), transparent 93%)" : "" }}
+                            >
+                              <span className="flex min-w-0 items-center gap-3 text-sm font-semibold text-slate-800 sm:text-base">
+                                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white shadow-sm" style={{ background: "linear-gradient(135deg, var(--brand-primary-dark), var(--accent-color))" }}>
+                                  <i className={`bi ${categoryIcon}`} />
+                                </span>
+                                <span className="truncate">{group.category}</span>
+                              </span>
+                              <span className="flex shrink-0 items-center gap-2">
+                                <span className="hidden rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-500 sm:inline">{group.services.length} modules</span>
+                                <i className={`bi bi-chevron-down text-base transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} style={{ color: "var(--accent-color)" }} />
+                              </span>
+                            </button>
 
-                                    <h6
-                                      style={{
-                                        lineHeight: "1.5",
-                                        paddingLeft: "15px",
-                                        fontWeight: "600",
-                                        minHeight: "45px",
-                                        display: "-webkit-box",
-                                        WebkitLineClamp: 2,
-                                        WebkitBoxOrient: "vertical",
-                                        overflow: "hidden",
-
-                                      }}
-                                    >{item.name}</h6>
-
-                                    {/* <p className="text-muted">
-                                    {item.description}
-                                  </p> */}
-
-
-                                  </div>
+                            <div className={`grid transition-[grid-template-rows,opacity] duration-500 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                              <div className="overflow-hidden">
+                                <div className="grid grid-cols-1 gap-2.5 border-t border-slate-100 bg-slate-50/80 p-3 sm:grid-cols-2 sm:p-4 lg:grid-cols-3">
+                                  {group.services.map((item) => (
+                                    <Link
+                                      key={item.slug}
+                                      to={`/services/customization/${item.slug}`}
+                                      className="group flex min-h-[65px] items-center gap-3 rounded-sm border border-slate-200 bg-white px-3.5 py-2 text-decoration-none shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_10px_20px_rgba(7,61,112,0.12)]"
+                                    >
+                                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md" style={{ color: "var(--accent-color)", backgroundColor: "color-mix(in srgb, var(--accent-color), transparent 91%)" }}>
+                                        <i className={`bi ${item.icon || "bi-grid"} text-base`} />
+                                      </span>
+                                      <span className="flex min-w-0 flex-1 items-center justify-between gap-2">
+                                        <span className="line-clamp-2 text-sm font-semibold leading-5 text-slate-700 transition-colors duration-200 group-hover:text-sky-700">{item.name}</span>
+                                        <i className="bi bi-arrow-up-right shrink-0 text-sm text-slate-400 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                                      </span>
+                                    </Link>
+                                  ))}
                                 </div>
-                              </Link>
+                              </div>
                             </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-
-
-
-                  </div>
-
-                  <div className="text-right mt-4">
-                    <button
-                      className="btn btn-outline-danger"
-                      onClick={() => setShowAllModules(!showAllModules)}
-                    >
-                      {showAllModules ? "Show Less" : "See All Modules"}
-                    </button>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </>
               )}
@@ -419,6 +436,9 @@ const ServiceDetails = () => {
       {service.id === "support_implementation" && (
         <>
           <Support/>
+      {service.id === "business_process_automation" && (
+        <>
+          <ProcessAutomation />
         </>
       )}
 

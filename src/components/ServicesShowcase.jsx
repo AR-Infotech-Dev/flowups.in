@@ -46,38 +46,42 @@ function ServicesShowcase() {
             </p>
           </div>
 
-          <div className="row gy-4">
+          <div className="featured-services-grid" >
             {servicesData.map((service, index) => (
-              <div
-                className="col-lg-4 col-md-6"
+              <article
+                className="featured-service-card"
                 key={service.id}
                 data-aos="fade-up"
-                data-aos-delay={100 + index * 100}
+                data-aos-delay={index * 90}
               >
-                <article className="service-solution-card h-100">
-                  <div className="service-card-topline" />
-                  <div className="service-card-icon">
-                    <i className={`bi ${service.icon}`} aria-hidden="true" />
-                  </div>
-                  <h3>{service.title}</h3>
+                <Link className="featured-service-image no-underline!" to={`/services/${service.id}`} aria-label={`Explore ${service.title}`}>
+                  <img
+                    src={`/images/${service.img}`}
+                    alt=""
+                    width="720"
+                    height="460"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span>0{index + 1}</span>
+                </Link>
+                <div className="featured-service-content">
+                  <h3><Link className="no-underline!" to={`/services/${service.id}`}>{service.title}</Link></h3>
                   <p>{service.description}</p>
-
-                  <ul className="service-benefits">
-                    {service.points.map((point) => (
-                      <li key={point}>
-                        <i className="bi bi-check-circle-fill" aria-hidden="true" />
-                        <span>{point}</span>
-                      </li>
+                  <ul>
+                    {service.points.slice(0, 3).map((point) => (
+                      <li key={point}><i className="bi bi-check2" />{point}</li>
                     ))}
                   </ul>
-
-                  <Link className="service-card-link" to={`/services/${service.id}`}>
-                    Explore service <i className="bi bi-arrow-right" aria-hidden="true" />
+                  <Link className="featured-service-link no-underline!" to={`/services/${service.id}`}>
+                    Explore service <i className="bi bi-arrow-up-right" />
                   </Link>
-                </article>
-              </div>
+                </div>
+              </article>
             ))}
+
           </div>
+
         </div>
       </section>
 

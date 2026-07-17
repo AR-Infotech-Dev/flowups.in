@@ -71,6 +71,11 @@
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -4142,6 +4147,9 @@ h6 {
 
 .home-features,
 .home-whyus,
+.home-products,
+.home-use-cases,
+.home-faq,
 .home-integrations {
   border-top: 1px solid #edf1f4;
   border-bottom: 1px solid #edf1f4;
@@ -4160,10 +4168,11 @@ h6 {
 
 .product-screen-frame {
   position: absolute;
+  padding: 10px;
   inset: 0;
   overflow: hidden;
   border: 1px solid #dce3e8;
-  border-radius: 9px;
+  border-radius: 4px;
   background: #ffffff;
   box-shadow: 0 22px 55px rgba(16, 42, 67, 0.13);
   opacity: 0;
@@ -4195,7 +4204,7 @@ h6 {
   position: absolute;
   z-index: 4;
   right: 16px;
-  bottom: 14px;
+  bottom: -55px;
   display: flex;
   gap: 6px;
   padding: 8px 10px;
@@ -5016,9 +5025,9 @@ h6 {
 .featured-service-card {
   overflow: hidden;
   border: 1px solid #dfe6eb;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #ffffff;
-  box-shadow: 0 10px 28px rgba(16, 42, 67, 0.055);
+  /* box-shadow: 0 10px 28px rgba(16, 42, 67, 0.055); */
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
@@ -5134,7 +5143,7 @@ h6 {
 
 @media (max-width: 991px) {
   .featured-services-heading {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     gap: 24px;
   }
 
@@ -5405,10 +5414,10 @@ h6 {
   gap: 58px;
   margin-bottom: 30px;
   padding: 48px;
-  border: 1px solid #dfe8ee;
-  border-radius: 18px;
+  /* border: 1px solid #dfe8ee; */
+  /* border-radius: 18px; */
   background: #ffffff;
-  box-shadow: 0 20px 55px rgba(16, 42, 67, 0.07);
+  /* box-shadow: 0 20px 55px rgba(16, 42, 67, 0.07); */
 }
 
 .company-product1 {
@@ -5475,9 +5484,10 @@ h6 {
 .sathi-screen-frame {
   position: absolute;
   inset: 0;
+  padding: 10px;
   overflow: hidden;
   border: 1px solid rgba(22, 168, 226, 0.28);
-  border-radius: 12px;
+  border-radius: 4px;
   background: #ffffff;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.34);
   opacity: 0;
@@ -5508,13 +5518,13 @@ h6 {
 .sathi-screen-label {
   position: absolute;
   z-index: 4;
-  left: 18px;
-  bottom: 16px;
+  left: 6px;
+  bottom: -53px;
   display: flex;
   flex-direction: column;
-  padding: 9px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 8px;
+  padding: 5px 12px;
+  /* border: 1px solid rgba(255, 255, 255, 0.24); */
+  /* border-radius: 8px; */
   color: #ffffff;
   background: rgba(5, 24, 40, 0.68);
   backdrop-filter: blur(9px);

@@ -300,15 +300,16 @@ function ProductScreenshotShowcase() {
             className={`product-screen-frame ${activeScreen === index ? "is-active" : "is-hidden"}`}
             aria-hidden={activeScreen !== index}
             key={item.label}
+            data-os={`${activeScreen === index ? "fade_in" : "fade-out"}`}
           >
             <img src={item.image} alt={activeScreen === index ? `Flowups CallDesk ${item.label} screen` : ""} />
           </div>
         ))}
-        <div className="product-screen-progress" aria-hidden="true">
+        {/* <div className="product-screen-progress" aria-hidden="true">
           {productScreens.map((item, index) => (
             <span className={activeScreen === index ? "active" : ""} key={item.label} />
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className="product-screen-caption" key={screen.label}>
@@ -352,6 +353,7 @@ function SathiScreenshotShowcase() {
             className={`sathi-screen-frame ${activeScreen === index ? "is-active" : "is-hidden"}`}
             aria-hidden={activeScreen !== index}
             key={screen.image}
+            data-os={`${activeScreen === index ? "fade-left" : "fade-left"}`}
           >
             <img src={screen.image} alt={activeScreen === index ? `Sathi Connect ${screen.label}` : ""} />
           </div>
@@ -360,11 +362,11 @@ function SathiScreenshotShowcase() {
           <span>Live product view</span>
           <strong>{sathiScreens[activeScreen].label}</strong>
         </div>
-        <div className="product-screen-progress" aria-hidden="true">
+        {/* <div className="product-screen-progress" aria-hidden="true">
           {sathiScreens.map((screen, index) => (
             <span className={activeScreen === index ? "active" : ""} key={screen.image} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -394,7 +396,7 @@ function LandingSections() {
           <div className="row align-items-center gy-5">
             <div className="col-lg-6" data-aos="fade-right">
               <span className="home-eyebrow">Tally, Integration & Software Solutions</span>
-              <h2>FlowupS Technologies delivers Tally expertise, custom software, and seamless integration solutions with end-to-end project support.</h2>
+              <h2 >FlowupS Technologies delivers Tally expertise, custom software, and seamless integration solutions with end-to-end project support.</h2>
               <p className="product-about-lead">
                 FlowupS Technologies combines Tally expertise with custom software development to create practical business solutions,
                 seamless integrations, & automation systems backed by end-to-end project support.
@@ -479,13 +481,13 @@ function LandingSections() {
 
       <FeaturedServices />
 
-{/* ******************************************************************************************************************/}
+      {/* ******************************************************************************************************************/}
       <section id="whyflowups" className="home-whyus section light-blue-background">
         <div className="container">
           <div className="why-flowups-header" data-aos="fade-up">
             <span className="home-eyebrow">Our Distinction</span>
-              <p>Why Businesses Choose FlowupS</p>
-              <a>FlowupS Technologies combines Tally expertise, software development
+            <p>Why Businesses Choose FlowupS</p>
+            <a>FlowupS Technologies combines Tally expertise, software development
               capability, practical business understanding, and strong client
               coordination. This helps us deliver solutions that are not only
               technically correct, but also useful in daily operations.</a>
@@ -514,12 +516,12 @@ function LandingSections() {
         </div>
       </section>
 
-{/* ********************************************************************************************************** */}
+      {/* ********************************************************************************************************** */}
 
       <section className="home-workflow section dark-background">
         <div className="container section-title" data-aos="fade-up">
           <h2>How We Work</h2>
-          <p>Our process is designed to deliver practical solutions aligned with your business workflow,
+          <p>Our process is designed <br />to deliver practical solutions aligned with your business workflow,
             from understanding requirements to development.</p>
         </div>
         <div className="container">
@@ -537,18 +539,18 @@ function LandingSections() {
         </div>
       </section>
 
-{/* ******************************************************************************************************************/}
+      {/* ******************************************************************************************************************/}
       <section id="support" className="home-support section light-blue-background">
         <div className="container">
           <div className="support-header" data-aos="fade-up">
             <span className="home-eyebrow">Reliability That Never Quits</span>
-              <p>Support That Continues After Delivery</p>
-              <a>FlowupS Technologies believes that software delivery is not the end of the relationship. 
-                Businesses need support during adoption, training, issue resolution, version changes, and future improvements. 
-                Our team helps clients with practical support so that their solution continues to work smoothly.</a>
+            <p>Support That Continues After Delivery</p>
+            <a>FlowupS Technologies believes that software delivery is not the end of the relationship.
+              Businesses need support during adoption, training, issue resolution, version changes, and future improvements.
+              Our team helps clients with practical support so that their solution continues to work smoothly.</a>
           </div>
 
-          <div className="row gy-4 mt-5">
+          <div className="row gy-4 mt-5 justify-center">
             {support.map((support, index) => (
               <div
                 className="col-lg-4 col-md-6"
@@ -571,7 +573,7 @@ function LandingSections() {
         </div>
       </section>
 
-{/* ********************************************************************************************************** */}
+      {/* ********************************************************************************************************** */}
 
       <section className="home-use-cases section">
         <div className="container section-title" data-aos="fade-up">
@@ -661,15 +663,15 @@ function LandingSections() {
           <h2>Our Team</h2>
           <p>Leadership & Team</p>
         </div>
-        <div className="container">
-           {/* data-aos="fade-up" */}
-          <article className="flex flex-col lg:flex-row items-center gap-10"> 
-            <div className="company-product1-copy w-[430px]">
+        <div className="container" data-aos="fade-up">
+          {/* data-aos="fade-up" */}
+          <article className="flex flex-col lg:flex-row items-center gap-10">
+            <div className="company-product1-copy w-[430px]" data-aos="fade-up">
               {/* <span className="home-eyebrow">Leadership & Team</span> */}
               <p>FlowupS Technologies Pvt. Ltd. is powered by directors, developers, sales professionals, support specialists, and technical advisors. Together, the team brings strong business understanding, Tally expertise, software development capability, sales experience, and dependable client support.</p>
               <Link to="/our-team" className="home-primary-link">Explore Team <i className="bi bi-arrow-right" /></Link>
             </div>
-            <div><Leadership /></div>
+            <div data-aos="fade-up" className=""><Leadership /></div>
           </article>
         </div>
       </section>
