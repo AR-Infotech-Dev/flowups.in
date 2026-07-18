@@ -3725,7 +3725,7 @@ h6 {
   font-size: clamp(26px, 4vw, 40px);
   font-weight: 100;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.em;
   text-transform: none;
 }
 
@@ -3762,7 +3762,7 @@ h6 {
   font-size: clamp(40px, 6.4vw, 70px);
   font-weight: 200;
   line-height: 1.02;
-  letter-spacing: -0.055em;
+  letter-spacing: 0em;
   text-transform: none;
   margin-top: -40px;
 }
@@ -4413,7 +4413,7 @@ h6 {
   font-size: clamp(52px, 7vw, 90px);
   font-weight: 650;
   line-height: 1.02;
-  letter-spacing: -0.055em;
+  letter-spacing: 0em;
 }
 
 .customization-hero-content>p {
@@ -5204,7 +5204,7 @@ h6 {
   font-size: clamp(26px, 4vw, 40px);
   font-weight: 100;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0em;
   text-transform: none;
 }
 
@@ -5438,7 +5438,7 @@ h6 {
   color: var(--heading-color);
   font-size: clamp(38px, 5vw, 58px);
   font-weight: 750;
-  letter-spacing: -0.055em;
+  letter-spacing: 0em;
 }
 
 .company-product-copy>p {
