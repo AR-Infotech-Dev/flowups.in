@@ -23,9 +23,7 @@ const categoryIcons = {
 
 
 const ServiceDetails = () => {
-
   const { id } = useParams();
-
   const service = servicesData.find((s) => s.id === id);
   const [activeCat, setActiveCat] = useState('');
   const [showAllModules, setShowAllModules] = useState(false);
@@ -61,7 +59,7 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-{/* ------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------------- */}
 
       {service.id === "tally" &&
         <section id="service-details" className="service-details section ">
@@ -435,15 +433,14 @@ const ServiceDetails = () => {
       )}
       {service.id === "support_implementation" && (
         <>
-          <Support/>
+          <Support />
+        </>
+      )}
       {service.id === "business_process_automation" && (
         <>
           <ProcessAutomation />
         </>
       )}
-
-
-
     </main >
   );
 };
